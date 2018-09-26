@@ -1,5 +1,26 @@
+#phone{
+  clear: both;
+  position: relative;
+  top: 45px;
+  left:0px;
+  color: #ffffff;
+}
+
+#header-nav{
+  height:120px;
+  background-color: #de6363;
+}
 
 
+.navbar-brand a:link, .navbar-brand a:visited, .navbar-brand a:hover, .navbar-brand a:active{
+  text-decoration:none;
+  color: #ffffff;
+}
+
+.navbar-brand a h1{
+  font-size: 250%;
+  font-weight: bold;
+}
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
