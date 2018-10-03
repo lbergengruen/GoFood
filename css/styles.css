@@ -75,7 +75,6 @@
   margin:0px 70px 0px 70px;
   background-image: url(../images/blackBackground.jpg);
   background-repeat: no-repeat;
-  background-opacity: 0.5;
   background-position: center;
   background-size: cover;
 }
@@ -84,11 +83,17 @@
   border: 10px;
   border-color: #ffffff;
   margin: auto;
-  height: 500px;
+  height: 70%;
 }
 
-.Jumbotron button{
-
+.mySign{
+  float: left;
+  position: relative;
+  align-content: center;
+  font-weight: 0;
+  font-size: 4em;
+  font-family: "aharoni";
+  color: #A7A04E;
 }
 
 
