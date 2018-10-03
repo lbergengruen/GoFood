@@ -1,34 +1,44 @@
 #phone{
   clear: both;
   position: relative;
-  top: 45px;
+  top: 25px;
   left:0px;
   color: #ffffff;
 }
 
 #phone img{
-  height: 45px;
+  height: 40px;
 }
 
 #header-nav{
   height:120px;
-  background-color: #de6363;
+  background-color: #B62511;
+  margin: 0px 25px 0px 25px;
 }
 
-
-.navbar-brand a:link, .navbar-brand a:visited, .navbar-brand a:hover, .navbar-brand a:active{
+#phone a:link, #phone a:visited, #phone a:hover, #phone a:active{
   text-decoration:none;
-  color: #ffffff;
-}
-
-.navbar h1{
-  margin: 0px;
+  color: #000000;
+  font-size: 1.1em;
+  vertical-align: middle;
+  line-height: 100%;
 }
 
 .navbar-brand a h1{
-  font-size: 250%;
-  font-weight: bold;
+  font-weight: 0;
+  font-size: 65px;
+  font-family: "informal roman";    /****informal roman, lucida handwriting****/
+  padding-left: 30px;
+  margin: 0px;
 }
+
+.navbar-brand a:link, .navbar-brand a:visited, .navbar-brand a:hover, .navbar-brand a:active{
+  text-decoration:none;
+  color: #DED890;
+}
+
+
+
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
