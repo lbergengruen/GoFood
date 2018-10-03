@@ -1,40 +1,55 @@
-#phone{
-  clear: both;
-  position: relative;
-  top: 25px;
-  left:0px;
-  color: #ffffff;
-}
-
-#phone img{
-  height: 40px;
-}
-
 #header-nav{
   height:120px;
   background-color: #B62511;
   margin: 0px 25px 0px 25px;
 }
 
-#phone a:link, #phone a:visited, #phone a:hover, #phone a:active{
-  text-decoration:none;
-  color: #000000;
-  font-size: 1.1em;
-  vertical-align: middle;
-  line-height: 100%;
-}
-
 .navbar-brand a h1{
   font-weight: 0;
-  font-size: 65px;
+  font-size: 75px;
   font-family: "informal roman";    /****informal roman, lucida handwriting****/
-  padding-left: 30px;
+  padding-left: 20px;
   margin: 0px;
 }
 
 .navbar-brand a:link, .navbar-brand a:visited, .navbar-brand a:hover, .navbar-brand a:active{
   text-decoration:none;
   color: #DED890;
+}
+
+#collapsable-nav a{
+  color: #DED890;
+  font-weight: bold;
+}
+
+#collapsable-nav .active a{
+  color: #3F3E39;
+}
+
+#collapsable-nav a:active{
+  color: #666022;
+}
+
+
+#phone{
+  clear: both;
+  position: relative;
+  text-align: right;
+  top: 25px;
+  left:0px;
+}
+
+#phone img{
+  height: 40px;
+}
+
+
+#phone a:link, #phone a:visited, #phone a:hover, #phone a:active{
+  text-decoration:none;
+  color: #252525;
+  font-size: 1.1em;
+  vertical-align: middle;
+  line-height: 100%;
 }
 
 
