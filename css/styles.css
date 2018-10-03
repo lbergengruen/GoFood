@@ -1,7 +1,18 @@
+#wholePage{
+  background-image: url("../images/Fondo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+/***** Header ******/
+
 #header-nav{
   height:120px;
   background-color: #B62511;
-  margin: 0px 25px 0px 25px;
+  margin: 0px 40px 0px 40px;
 }
 
 .navbar-brand a h1{
@@ -55,7 +66,33 @@
 .container{
   width: 90%;
 }
+/***** End Header *****/
 
+/**** JUMBOTRON *****/
+.Jumbotron{
+  border: 40px;
+  height: 600px;
+  margin:0px 70px 0px 70px;
+  background-image: url(../images/blackBackground.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.Jumbotron .mySlides{
+  border: 10px;
+  border-color: #ffffff;
+  margin: auto;
+  height: 500px;
+}
+
+.Jumbotron button{
+
+}
+
+
+/*****End Jumbotron *****/
 .visible-lg{
   visibility: hidden;
 }
