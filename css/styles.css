@@ -75,7 +75,7 @@
   margin:0px 70px 0px 70px;
   background-image: url(../images/blackBackground.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-opacity: 0.5;
   background-position: center;
   background-size: cover;
 }
