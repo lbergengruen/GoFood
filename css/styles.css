@@ -1,19 +1,20 @@
 .carousel-inner .item img{
   border: 10px;
-  border-color: #ffffff;
+  border-color: #000;
   margin: auto;
   height: 70%;
   width: 87%;
 }
 
+
 #wholePage{
-  background-color: #000;
-  /*background-image: url("../images/Fondo.jpg");
+  /*background-color: #000;*/
+  background-image: url("../images/fondo2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 100%;*/
+  height: 100%;
 }
 
 /***** Header ******/
@@ -22,6 +23,7 @@
   height:120px;
   background-color: #B62511;
   margin: 0px 40px 0px 40px;
+  border-color: #000;
 }
 
 .navbar-brand a h1{
@@ -75,40 +77,76 @@
 .container{
   width: 90%;
 }
-/***** End Header *****/
 
-/**** JUMBOTRON *****/
-/*.Jumbotron{
-  border: 40px;
-  height: 800px;
-  margin:0px 70px 0px 70px;
-  background-color:rgba(0, 0, 0, 0.5);
-}
-
-
-.Jumbo_slides .mySlides{
-  border: 10px;
-  border-color: #ffffff;
-  margin: auto;
-  height: 100%;
-  width: 100%;
-}
-*/
 .carousel-caption {
   background-color:rgba(0, 0, 0, 0.5);
   padding: 5px;
-  padding-right: 200px;
-  width: 100%;
-  margin-right: 200px;
+  padding-right: 10px;
+  width: 73.5%;
+  margin-right: 0;
   margin-bottom: 480px;
   font-weight: 0;
   font-size: 4em;
   font-family: "aharoni";
   text-shadow: 3px 3px 3px #000;
   color: #A7A04E;
+  opacity: 1;
 }
 
+a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a.carousel-control:active{
+  opacity: 0;
+}
 
+#bottons {
+  border: 10px;
+  width: 87%;
+  margin: auto;
+  background-image: url("../images/fuego.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+#bottons a {
+  width: auto;
+}
+
+.botton {
+  width: 300px;
+}
+
+a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
+  text-decoration:none;
+  color: #A7A04E;
+  vertical-align: middle;
+  line-height: 100%;
+}
+
+.botton_title {
+  width: 300px;
+  text-align: center;
+  font-size: 3em;
+  padding-top: 13px;
+  margin-left: 440px;
+  margin-bottom: 0;
+  font-family: "cooper black";
+  color: #A7A04E;
+  opacity: 1;
+}
+
+.botton_image {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 440px;
+  margin-bottom: 40px;
+}
+
+.botton_image img {
+  width: 100%;
+  height: 100%;
+}
 /*****End Jumbotron *****/
 .visible-lg{
   visibility: hidden;
