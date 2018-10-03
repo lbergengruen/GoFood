@@ -6,6 +6,10 @@
   color: #ffffff;
 }
 
+#phone img{
+  height: 45px;
+}
+
 #header-nav{
   height:120px;
   background-color: #de6363;
@@ -15,6 +19,10 @@
 .navbar-brand a:link, .navbar-brand a:visited, .navbar-brand a:hover, .navbar-brand a:active{
   text-decoration:none;
   color: #ffffff;
+}
+
+.navbar h1{
+  margin: 0px;
 }
 
 .navbar-brand a h1{
