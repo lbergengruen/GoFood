@@ -78,6 +78,11 @@
   width: 90%;
 }
 
+#myCarousel{
+  margin: 0px 5% 0 5%;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
 .carousel-caption {
   background-color:rgba(0, 0, 0, 0.5);
   padding: 5px;
@@ -100,13 +105,14 @@ a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a
 
 #bottons {
   border: 10px;
-  width: 87%;
-  margin: auto;
-  background-image: url("../images/fuego.jpg");
+  margin: 0 5% 0 5%;
+  /*
+  background-image: url("../images/fondoPedido.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  height: 100%;
+  background-size: cover;*/
+  background-color:rgba(256, 256, 256, 0.2);
+  height: 400px;
 }
 
 #bottons a {
@@ -119,7 +125,7 @@ a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a
 
 a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   text-decoration:none;
-  color: #A7A04E;
+  color: #000000;
   vertical-align: middle;
   line-height: 100%;
 }
@@ -132,7 +138,7 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   margin-left: 440px;
   margin-bottom: 0;
   font-family: "cooper black";
-  color: #A7A04E;
+  color: #000000;
   opacity: 1;
 }
 
@@ -147,6 +153,8 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
 .botton_image img {
   width: 100%;
   height: 100%;
+  border: 10px;
+  border-color: #ffffff;
 }
 /*****End Jumbotron *****/
 .visible-lg{
@@ -168,7 +176,7 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .visible-md{
-  visibility: visible;
+    visibility: visible;
   }
 }
 
