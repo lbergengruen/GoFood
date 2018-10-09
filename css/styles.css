@@ -83,6 +83,7 @@
   background-color:rgba(0, 0, 0, 0.5);
   border-right: : 10px solid #000000;
   border-left: : 10px solid #000000;
+  width: 90%;
 }
 
 .carousel-caption {
@@ -106,8 +107,9 @@ a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a
 }
 
 #cartelera{
-  height: 200px;
+  height: auto;
   margin: 0 5% 0 5%;
+  width: 90%;
 }
 
 .cartel{
@@ -149,8 +151,10 @@ a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;*/
-  background-color:rgba(256, 256, 256, 0.2);
+  background-color:rgba(256, 256, 220, 0.5);
   height: 400px;
+  text-align: center;
+  width: 90%;
 }
 
 #bottons a {
@@ -159,6 +163,7 @@ a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a
 
 .botton {
   width: 300px;
+  display: inline-block;
 }
 
 a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
@@ -173,8 +178,10 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   text-align: center;
   font-size: 3em;
   padding-top: 13px;
+  /*
   margin-left: 440px;
   margin-bottom: 0;
+  */
   font-family: "cooper black";
   color: #000000;
   opacity: 1;
@@ -183,8 +190,10 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
 .botton_image {
   width: 300px;
   height: 300px;
+  /*
   position: relative;
   left: 440px;
+  */
   margin-bottom: 40px;
 }
 
@@ -200,11 +209,13 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   margin: 0 5% 0 5%;
   background-color: #B62511;
   height: 300px;
+  width: 90%;
 }
 
 #calculatorMenu>p{
   text-align: center;
   color: #000000;
+  font-weight: bold;
   font-size: 1.2em;
   font-family: "candara";
 }
@@ -233,6 +244,7 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
+  font-weight: bold;
   border-radius: 30%;
   margin: 20px auto 0 auto;
   font-family: "candara";
@@ -241,9 +253,48 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
 #infoMenu{
   border: 10px solid #000000;
   margin: 0 5% 0 5%;
+  padding-right: 0;
   background-color: #333333;
-  height: 400px;
+  height: auto;
+  width: 90%;
+  text-align:right;
 }
+
+.quienesSomos_title>p{
+  text-align: left;
+  font-size: 3em;
+  padding-top: 13px;
+  margin: 10px 0 0 0;
+  font-family: "cooper black";
+  color: #fff;
+  opacity: 1;
+}
+
+.quienesSomos_body>p{
+  text-align: left;
+  color: #eef;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: "candara";
+}
+
+#imgQuienesSomos{
+  height:300px;
+  text-align:right;
+  padding-right:0;
+  width:450px;
+  display: inline-block;
+}
+
+.quienes_image{
+  height:300px;
+  margin:0;
+  display: inline-block;
+}
+
+
+
+
 
 /*****End Jumbotron *****/
 .visible-lg{
