@@ -81,6 +81,8 @@
 #myCarousel{
   margin: 0px 5% 0 5%;
   background-color:rgba(0, 0, 0, 0.5);
+  border-right: : 10px solid #000000;
+  border-left: : 10px solid #000000;
 }
 
 .carousel-caption {
@@ -103,8 +105,44 @@ a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a
   opacity: 0;
 }
 
+#cartelera{
+  height: 200px;
+  margin: 0 5% 0 5%;
+}
+
+.cartel{
+  height: 200px;
+  width: 100%;
+  border: 10px solid #ffffff;
+  vertical-align: middle;
+}
+
+.cartel p{
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left;
+  height: 200px;
+}
+
+#c1{
+  background-color: #e65c00;
+  border-right: 5px solid #ffffff
+}
+
+#c2{
+  background-color: #00cc00;
+  border-left: 5px solid #ffffff
+  border-right: 5px solid #ffffff
+}
+
+#c3{
+  background-color: #3399ff;
+  border-left: 5px solid #ffffff
+}
+
+
 #bottons {
-  border: 10px;
+  border: 10px solid;
   margin: 0 5% 0 5%;
   /*
   background-image: url("../images/fondoPedido.jpg");
@@ -156,6 +194,57 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   border: 10px;
   border-color: #ffffff;
 }
+
+#calculatorMenu {
+  border: 10px solid #000000;
+  margin: 0 5% 0 5%;
+  background-color: #B62511;
+  height: 300px;
+}
+
+#calculatorMenu>p{
+  text-align: center;
+  color: #000000;
+  font-size: 1.2em;
+  font-family: "candara";
+}
+
+.calculadora_title {
+  width: 300px;
+  text-align: center;
+  font-size: 3em;
+  padding-top: 13px;
+  margin: 10px 0 0 0;
+  font-family: "cooper black";
+  color: #000000;
+  opacity: 1;
+}
+
+#calculadora_botton{
+  text-align: center;
+}
+
+.calcBotton{
+  background-color: #ff6600;
+  border: 5px solid #ffffff;
+  color: #ffffff;
+  padding: 20px 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 30%;
+  margin: 20px auto 0 auto;
+  font-family: "candara";
+}
+
+#infoMenu{
+  border: 10px solid #000000;
+  margin: 0 5% 0 5%;
+  background-color: #333333;
+  height: 400px;
+}
+
 /*****End Jumbotron *****/
 .visible-lg{
   visibility: hidden;
@@ -175,8 +264,38 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
+  .cartel{
+    font-size: 30px;
+  }
+
   .visible-md{
     visibility: visible;
+  }
+
+  .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+
+  .col-lg-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 50%;
+  }
+  .col-lg-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 33.3%;
   }
 }
 
@@ -185,6 +304,32 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   .visible-md{
   visibility: visible;
   }
+
+  .col-md-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+
+  .col-md-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 50%;
+  }
+  .col-md-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 33.3%;
+  }
 }
 
 /********** Small devices only **********/
@@ -192,11 +337,29 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   .visible-sm{
   visibility: visible;
   }
+
+  .col-sm-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   .visible-xs{
   visibility: visible;
+  }
+
+  .col-xs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
   }
 }
