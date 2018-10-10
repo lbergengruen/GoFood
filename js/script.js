@@ -98,6 +98,14 @@ document.getElementById("navMenuButton").addEventListener("click", function(){
   buildAndShowPedidosHTML();
 });
 
+document.getElementById("pedirBoton").addEventListener("click", function(){
+  buildAndShowPedidosHTML();
+});
+
+document.getElementsByClassName("calcBotton").addEventListener("click", function(){
+  buildAndShowCalculadoraHTML();
+});
+
 document.getElementById("navCalculadoraButton").addEventListener("click", function(){
   buildAndShowCalculadoraHTML();
 });
