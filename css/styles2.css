@@ -1,0 +1,27 @@
+
+#superMenu{
+	height: 800px;
+	margin: 0px 5% 0 5%;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+
+#superMenu h1{
+	text-align: center;
+	margin: 0;
+	padding-top: 10px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+
+#superMenu h2{
+	margin: 0 0 20px 20px;
+	padding-top: 10px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#superMenu .item-Picture img{
+	height: 160px;
+	width: 160px;
+}
