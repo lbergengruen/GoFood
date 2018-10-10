@@ -109,42 +109,45 @@ a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a
 #cartelera{
   height: auto;
   margin: 0 5% 0 5%;
+  padding: 0;
   width: 90%;
 }
 
 .cartel{
   height: 200px;
   width: 100%;
-  border: 10px solid #ffffff;
+  border: 10px solid #383833;
   vertical-align: middle;
 }
 
 .cartel p{
-  color: #ffffff;
   font-weight: bold;
   text-align: left;
   height: 200px;
 }
 
 #c1{
-  background-color: #e65c00;
-  border-right: 5px solid #ffffff
+  background-color: #B62511;
+  border-right: 5px solid #383833;
+  color: #C9C1B7;
 }
 
 #c2{
-  background-color: #00cc00;
-  border-left: 5px solid #ffffff
-  border-right: 5px solid #ffffff
+  background-color: #F8AA18;
+  border-left: 5px solid #383833;
+  border-right: 5px solid #383833;
+  color: #23231E;
 }
 
 #c3{
-  background-color: #3399ff;
-  border-left: 5px solid #ffffff
+  background-color: #000;
+  border-left: 5px solid #383833;
+  color: #C9C1B7;
 }
 
 
 #bottons {
-  border: 10px solid;
+  border: 10px solid #978D7A;
   margin: 0 5% 0 5%;
   /*
   background-image: url("../images/fondoPedido.jpg");
@@ -292,9 +295,57 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   display: inline-block;
 }
 
+#contacto {
+  border: 10px solid #000000;
+  margin: 0 5% 0 5%;
+  padding-right: 0;
+  background-color: #F8AA18;
+  height: auto;
+  width: 90%;
 
+}
 
+.contacto_titulo{
+  text-align: center;
+  font-size: 3em;
+  padding-top: 13px;
+  margin: 10px 0 0 0;
+  font-family: "cooper black";
+  color: #23231E;
+  opacity: 1;
+}
 
+#lista_contacto{
+  color: #23231E;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "candara";
+  list-style-type: none;
+}
+
+.elemento_cont{
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.titulito{
+  color: #181816;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "candara";
+}
+
+.textito{
+  padding-left: 10px;
+}
 
 /*****End Jumbotron *****/
 .visible-lg{
