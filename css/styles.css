@@ -404,6 +404,15 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
     width: 100%;
   }
 
+  .col-lg-8 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 66.6%;
+  }
+
   .col-lg-6 {
     position: relative;
     min-height: 1px;
