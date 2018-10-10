@@ -318,7 +318,7 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
 #lista_contacto{
   color: #23231E;
   text-align: left;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 20px;
   text-decoration: none;
   display: inline-block;
@@ -329,8 +329,8 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
 }
 
 .elemento_cont{
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .titulito{
@@ -338,23 +338,24 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   text-align: left;
   text-decoration: none;
   display: inline-block;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
   font-family: "candara";
 }
 
 .textito{
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 #insert_nombre{
   width: 100%;
   padding: 12px 20px;
   box-sizing: border-box;
-  border: 2px solid #ccc;
+  border: 2px solid #333;
   border-radius: 4px;
-  background-color: #f8f8f8;
+  background-color: #474740;
   resize: none;
+  color: #eee;
 }
 
 #insert_msj{
@@ -362,11 +363,22 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   height: 150px;
   padding: 12px 20px;
   box-sizing: border-box;
-  border: 2px solid #ccc;
+  border: 2px solid #333;
   border-radius: 4px;
-  background-color: #f8f8f8;
+  background-color: #474740;
   resize: none;
+  color: #eee;
 }
+
+#footer{
+  height:120px;
+  background-color: #B62511;
+  margin: 0px 40px 0px 40px;
+  border-color: #000;
+}
+
+
+
 
 /*****End Jumbotron *****/
 .visible-lg{
