@@ -186,7 +186,7 @@ a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a
   background-position: center;
   background-size: cover;*/
   background-color:rgba(256, 256, 220, 0.5);
-  height: 400px;
+  height: 350px;
   text-align: center;
   width: 90%;
 }
@@ -196,7 +196,7 @@ a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a
 }
 
 .botton {
-  width: 300px;
+  width: 250px;
   display: inline-block;
 }
 
@@ -208,7 +208,7 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
 }
 
 .botton_title {
-  width: 300px;
+  width: 250px;
   text-align: center;
   font-size: 3em;
   padding-top: 13px;
@@ -222,8 +222,8 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
 }
 
 .botton_image {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   /*
   position: relative;
   left: 440px;
@@ -581,5 +581,21 @@ a.calcBotton:hover{
 
   #header-nav>div.container{
     padding: 0;
+  }
+  .hidden-xxs{
+  visibility: hidden;
+  }
+  .botton_title{
+    
+    font-size: 15vw;
+    width: 100%;
+    vertical-align: center;
+  }
+  .botton{
+    width: 100%;
+    height: 100px;
+  }
+  #bottons{
+    height: 170px;
   }
 }
