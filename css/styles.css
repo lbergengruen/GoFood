@@ -20,23 +20,39 @@
 /***** Header ******/
 
 #header-nav{
-  height:120px;
   background-color: #B62511;
   margin: 0px 40px 0px 40px;
   border-color: #000;
+  height: 100%;
+}
+
+#header-nav>div.container{
+  margin:0;
+  width: 100%;
+  height:100%;
+}
+
+.navbar-brand {
+  width:auto;
+  height:auto;
 }
 
 .navbar-brand a h1{
   font-weight: 0;
   font-size: 75px;
   font-family: "informal roman";    /****informal roman, lucida handwriting****/
-  padding-left: 20px;
   margin: 0px;
 }
 
 .navbar-brand a:link, .navbar-brand a:visited, .navbar-brand a:hover, .navbar-brand a:active{
   text-decoration:none;
   color: #DED890;
+}
+
+#collapsable-nav {
+  width: 100%;
+  height: auto;
+  margin:0;
 }
 
 #collapsable-nav a{
@@ -50,6 +66,21 @@
 
 #collapsable-nav a:active{
   color: #666022;
+}
+
+#navbarToggle{
+  position: relative;
+  float: right;
+  margin: 15px;
+  margin-top: 60px;
+}
+
+.navbar-header{
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  margin:0;
+  position: relative;
 }
 
 #phone{
@@ -133,7 +164,7 @@ a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a
 }
 
 #c2{
-  background-color: #F8AA18;
+  background-color: #A7A04E;
   border-left: 5px solid #383833;
   border-right: 5px solid #383833;
   color: #23231E;
@@ -238,7 +269,9 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   text-align: center;
 }
 
-.calcBotton{
+
+a.calcBotton:hover, a.calcBotton:visited, a.calcBotton:active, a.calcBotton:link{
+  text-decoration:none;
   background-color: #ff6600;
   border: 5px solid #ffffff;
   color: #ffffff;
@@ -251,6 +284,10 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   border-radius: 30%;
   margin: 20px auto 0 auto;
   font-family: "candara";
+}
+
+a.calcBotton:hover{
+  font-size: 24px;
 }
 
 #infoMenu{
@@ -299,7 +336,7 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   border: 10px solid #000000;
   margin: 0 5% 0 5%;
   padding-right: 0;
-  background-color: #F8AA18;
+  background-color: #A7A04E;
   height: auto;
   width: 90%;
 
@@ -403,9 +440,10 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
     font-size: 30px;
   }
 
-  .visible-md{
+  .visible-lg{
     visibility: visible;
   }
+
 
   .col-lg-12 {
     position: relative;
@@ -449,6 +487,8 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   visibility: visible;
   }
 
+
+
   .col-md-12 {
     position: relative;
     min-height: 1px;
@@ -490,13 +530,21 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
     float: left;
     width: 100%;
   }
+
 }
 
 /********** Extra small devices only **********/
-@media (max-width: 767px) {
+@media (min-width: 471px) and (max-width: 767px) {
   .visible-xs{
   visibility: visible;
   }
+
+  .navbar-brand a h1{
+  font-size: 10vw;
+}
+#navbarToggle{
+  margin-top: 40px;
+}
 
   .col-xs-12 {
     position: relative;
@@ -505,5 +553,33 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
     padding-left: 15px;
     float: left;
     width: 100%;
+  }
+}
+
+@media (max-width: 470px){
+  .navbar-brand a h1{
+    font-size: 13vw;  
+  }
+
+  .visible-xs{
+  visibility: visible;
+  }
+
+  #navbarToggle{
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-right:0px;
+    padding:5px;
+  }
+
+  #header-nav{
+    margin:0;
+  }
+  .navbar-header{
+    margin:0;
+  }
+
+  #header-nav>div.container{
+    padding: 0;
   }
 }
