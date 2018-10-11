@@ -455,6 +455,7 @@ a.calcBotton:hover{
   .visible-lg{
     visibility: visible;
   }
+
   .col-lg-12 {
     position: relative;
     min-height: 1px;
@@ -503,6 +504,10 @@ a.calcBotton:hover{
     top: -110px;
   }
 
+  .cartel{
+    font-size: 28px;
+  }
+
   .visible-md{
   visibility: visible;
   }
@@ -546,6 +551,10 @@ a.calcBotton:hover{
     top: -110px;
   }
 
+  .cartel{
+    font-size: 20px;
+  }
+
   .visible-sm{
     visibility: visible;
   }
@@ -575,8 +584,16 @@ a.calcBotton:hover{
       top: -110px;
     }
 
+    .cartel{
+      font-size: 20px;
+    }
+
     .hidden-sx{
       visibility: hidden;
+    }
+
+    #navCalculadoraButton{
+      width: 0px;
     }
 
     .visible-sm{
@@ -606,6 +623,10 @@ a.calcBotton:hover{
 
   #navbarToggle{
     margin-top: 40px;
+  }
+
+  .cartel{
+    font-size: 20px;
   }
 
   .visible-xs{
