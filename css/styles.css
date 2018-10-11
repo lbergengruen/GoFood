@@ -90,7 +90,7 @@
   clear: both;
   position: relative;
   text-align: right;
-  top: -40px;
+  top: -50px;
   left:0px;
 }
 
@@ -258,7 +258,7 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
 }
 
 .calculadora_title {
-  width: 300px;
+  width: 100%;
   text-align: center;
   font-size: 3em;
   padding-top: 13px;
@@ -270,6 +270,7 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
 
 #calculadora_botton{
   text-align: center;
+  margin-bottom: 10px;
 }
 
 
@@ -278,7 +279,7 @@ a.calcBotton:hover, a.calcBotton:visited, a.calcBotton:active, a.calcBotton:link
   background-color: #ff6600;
   border: 5px solid #ffffff;
   color: #ffffff;
-  padding: 20px 200px;
+  padding: 20px 12vw 20px 12vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -330,7 +331,7 @@ a.calcBotton:hover{
 }
 
 .quienes_image{
-  height:300px;
+  width: 100%;
   margin:0;
   display: inline-block;
 }
@@ -440,12 +441,12 @@ a.calcBotton:hover{
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .navbar>.container .navbar-brand{
-    margin: 20px 0 0 20px;
+    margin: 0px 0 0 20px;
   }
 
   #nav-list{
     position: relative;
-    top: -110px;
+    top: 0px;
   }
 
   .cartel{
@@ -496,16 +497,24 @@ a.calcBotton:hover{
 @media (min-width: 992px) and (max-width: 1199px) {
   
   .navbar>.container .navbar-brand{
-    margin: 20px 0 0 20px;
+    margin: 0px 0 0 20px;
   }
 
   #nav-list{
     position: relative;
-    top: -110px;
+    top: 0px;
   }
 
   .cartel{
     font-size: 28px;
+  }
+
+  .quienes_image{
+    width: 100%;
+  }
+
+  .quienes_image img{
+    width: 100%;
   }
 
   .visible-md{
@@ -543,12 +552,12 @@ a.calcBotton:hover{
 @media (min-width: 870px) and (max-width: 992px) {
   
   .navbar>.container .navbar-brand{
-    margin: 20px 0 0 20px;
+    margin: 0px 0 0 20px;
   }
 
   #nav-list{
     position: relative;
-    top: -110px;
+    top: 0px;
   }
 
   .cartel{
@@ -575,17 +584,21 @@ a.calcBotton:hover{
 }
 /*********SM-XS Devices********/
   @media (min-width: 768px) and (max-width: 870px) {
-    .navbar>.container .navbar-brand{
-      margin: 20px 0 0 20px;
+      .navbar>.container .navbar-brand{
+      margin: 0px 0 0 20px;
     }
 
     #nav-list{
       position: relative;
-      top: -110px;
+      top: 0px;
     }
 
     .cartel{
       font-size: 20px;
+    }
+
+    #calculatorMenu{
+      height: auto;
     }
 
     .hidden-sx{
@@ -629,6 +642,10 @@ a.calcBotton:hover{
     font-size: 20px;
   }
 
+  #calculatorMenu{
+    height: auto;
+  }
+
   .visible-xs{
     visibility: visible;
   }
@@ -659,6 +676,10 @@ a.calcBotton:hover{
     margin:0;
   }
 
+  #calculatorMenu{
+    height: auto;
+  }
+
   .navbar-header{
     margin:0;
   }
@@ -671,6 +692,7 @@ a.calcBotton:hover{
     font-size: 15vw;
     width: 100%;
     vertical-align: center;
+    display: ;
   }
   
   .botton{
@@ -682,6 +704,8 @@ a.calcBotton:hover{
     height: 170px;
   }
   
+
+
   .visible-xs{
     visibility: visible;
   }
