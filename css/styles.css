@@ -15,6 +15,7 @@
   background-position: center;
   background-size: cover;
   height: 100%;
+  min-height: 1000px;
 }
 
 /***** Header ******/
@@ -39,7 +40,7 @@
 
 .navbar-brand a h1{
   font-weight: 0;
-  font-size: 75px;
+  font-size: 85px;
   font-family: "informal roman";    /****informal roman, lucida handwriting****/
   margin: 0px;
 }
@@ -49,10 +50,13 @@
   color: #DED890;
 }
 
-#collapsable-nav {
+#header-nav>div.container{
+  height: 110px;
+}
+
+.navbar-header>#collapsable-nav {
   width: 100%;
-  height: auto;
-  margin:0;
+  height: 70px;
 }
 
 #collapsable-nav a{
@@ -80,14 +84,13 @@
   height: 100%;
   padding-left: 10px;
   margin:0;
-  position: relative;
 }
 
 #phone{
   clear: both;
   position: relative;
   text-align: right;
-  top: 25px;
+  top: -40px;
   left:0px;
 }
 
@@ -436,6 +439,15 @@ a.calcBotton:hover{
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
+  .navbar>.container .navbar-brand{
+    margin: 20px 0 0 20px;
+  }
+
+  #nav-list{
+    position: relative;
+    top: -110px;
+  }
+
   .cartel{
     font-size: 30px;
   }
@@ -443,8 +455,6 @@ a.calcBotton:hover{
   .visible-lg{
     visibility: visible;
   }
-
-
   .col-lg-12 {
     position: relative;
     min-height: 1px;
@@ -483,11 +493,19 @@ a.calcBotton:hover{
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
+  
+  .navbar>.container .navbar-brand{
+    margin: 20px 0 0 20px;
+  }
+
+  #nav-list{
+    position: relative;
+    top: -110px;
+  }
+
   .visible-md{
   visibility: visible;
   }
-
-
 
   .col-md-12 {
     position: relative;
@@ -517,9 +535,23 @@ a.calcBotton:hover{
 }
 
 /********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 870px) and (max-width: 992px) {
+  
+  .navbar>.container .navbar-brand{
+    margin: 20px 0 0 20px;
+  }
+
+  #nav-list{
+    position: relative;
+    top: -110px;
+  }
+
   .visible-sm{
-  visibility: visible;
+    visibility: visible;
+  }
+
+  .hidden-sm{
+    visibility: hidden;
   }
 
   .col-sm-12 {
@@ -532,19 +564,53 @@ a.calcBotton:hover{
   }
 
 }
+/*********SM-XS Devices********/
+  @media (min-width: 768px) and (max-width: 870px) {
+    .navbar>.container .navbar-brand{
+      margin: 20px 0 0 20px;
+    }
+
+    #nav-list{
+      position: relative;
+      top: -110px;
+    }
+
+    .hidden-sx{
+      visibility: hidden;
+    }
+
+    .visible-sm{
+      visibility: visible;
+    }
+
+    .hidden-sm{
+      visibility: hidden;
+    }
+
+    .col-sm-12 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      float: left;
+      width: 100%;
+    }
+  }
 
 /********** Extra small devices only **********/
 @media (min-width: 471px) and (max-width: 767px) {
-  .visible-xs{
-  visibility: visible;
+  
+  .navbar-brand a h1{
+    font-size: 10vw;
   }
 
-  .navbar-brand a h1{
-  font-size: 10vw;
-}
-#navbarToggle{
-  margin-top: 40px;
-}
+  #navbarToggle{
+    margin-top: 40px;
+  }
+
+  .visible-xs{
+    visibility: visible;
+  }
 
   .col-xs-12 {
     position: relative;
@@ -561,10 +627,6 @@ a.calcBotton:hover{
     font-size: 13vw;  
   }
 
-  .visible-xs{
-  visibility: visible;
-  }
-
   #navbarToggle{
     margin-top: 25px;
     margin-left: 0px;
@@ -575,6 +637,7 @@ a.calcBotton:hover{
   #header-nav{
     margin:0;
   }
+
   .navbar-header{
     margin:0;
   }
@@ -582,20 +645,29 @@ a.calcBotton:hover{
   #header-nav>div.container{
     padding: 0;
   }
-  .hidden-xxs{
-  visibility: hidden;
-  }
+
   .botton_title{
-    
     font-size: 15vw;
     width: 100%;
     vertical-align: center;
   }
+  
   .botton{
     width: 100%;
     height: 100px;
   }
+  
   #bottons{
     height: 170px;
   }
+  
+  .visible-xs{
+    visibility: visible;
+  }
+
+  
+  .hidden-xxs{
+    visibility: hidden;
+  }
+  
 }
