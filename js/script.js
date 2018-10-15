@@ -15,7 +15,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
   var dc = {};
 
-  var homeHtml = "../snipets/home_snipet.html";
+  var homeHtml = "https://lbergengruen.github.io/GoFood/snipets/home_snipet.html";
   var pedidoHtml = "../snipets/pedido_snipet.html";
   var calculadoraHtml = "../snipets/calculadora_snippet.html";
 

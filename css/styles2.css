@@ -37,11 +37,27 @@
 
 #superMenu .item-text{
 	color: #ffffff;
+	max-height: 180px;
 	height: 180px;
+
+}
+
+.cantidad{
+	float: left;
+	position: relative;
+	top: 45%;
+	left: 75%;
+	width: 40px;
+	color: #000000;
+	text-align: center;
+
+
 }
 
 .item-Price{
 	position: relative;
 	text-align: right;
-	top: 100px;
+	width: 30px;
+	top: 35%;
+	left: 90%;
 }
