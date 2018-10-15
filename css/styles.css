@@ -465,6 +465,14 @@ a.calcBotton:hover{
     float: left;
     width: 100%;
   }
+  .col-lg-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 75%;
+  }
 
   .col-lg-8 {
     position: relative;
@@ -490,6 +498,14 @@ a.calcBotton:hover{
     padding-left: 15px;
     float: left;
     width: 33.3%;
+  }
+  .col-lg-3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 25%;
   }
 }
 
@@ -530,6 +546,23 @@ a.calcBotton:hover{
     width: 100%;
   }
 
+  .col-md-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 75%;
+  }
+  .col-md-8 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 66.6%;
+  }
+
   .col-md-6 {
     position: relative;
     min-height: 1px;
@@ -545,6 +578,14 @@ a.calcBotton:hover{
     padding-left: 15px;
     float: left;
     width: 33.3%;
+  }
+  .col-md-3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 25%;
   }
 }
 
