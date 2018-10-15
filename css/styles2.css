@@ -12,12 +12,36 @@
 	color: #ffffff;
 }
 
-
 #superMenu h2{
-	margin: 0 0 20px 20px;
+	margin: 30px 0 20px 20px;
 	padding-top: 10px;
 	font-weight: bold;
 	color: #ffffff;
+}
+
+h4{
+	color: #eca1a6;
+	font-weight: bold;
+	padding: 0 0 0px 40px;
+}
+
+ #superMenu a:link, #superMenu a:visited, #superMenu a:hover, #superMenu a:active{
+	text-decoration:none;
+	color: #ffffff;
+}
+
+#superMenu a:hover{
+	font-weight: bold;
+}
+
+.pedidoText{
+	color: #ffffff;
+	margin: 0 0 0 40px;
+}
+
+h3{
+	color: #ffffff;
+	margin-left: 50px;
 }
 
 #superMenu .item{

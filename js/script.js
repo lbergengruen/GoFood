@@ -10,14 +10,13 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 });
 
 
-
 (function (global) {
 
   var dc = {};
 
   var homeHtml = "https://lbergengruen.github.io/GoFood/snipets/home_snipet.html";
-  var pedidoHtml = "../snipets/pedido_snipet.html";
-  var calculadoraHtml = "../snipets/calculadora_snippet.html";
+  var pedidoHtml = "https://lbergengruen.github.io/GoFood/snipets/pedido_snipet.html";
+  var calculadoraHtml = "https://lbergengruen.github.io/GoFood/snipets/calculadora_snippet.html";
 
   var insertHtml = function (selector, html) {
     var targetElem = document.querySelector(selector);
