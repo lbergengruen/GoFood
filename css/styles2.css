@@ -69,10 +69,14 @@ h3{
 	height: 100px;
 }
 
+#superMenu .item-Description{
+	height: 45px;
+}
+
 .cantidad{
 	float: left;
 	position: relative;
-	top: 28%;
+	top: 0%;
 	left: 75%;
 	width: 40px;
 	color: #000000;
@@ -81,8 +85,9 @@ h3{
 
 .item-Price{
 	position: relative;
+	float: left;
 	text-align: right;
 	width: 30px;
-	top: 10%;
-	left: 90%;
+	top: 5%;
+	left: 75%;
 }
