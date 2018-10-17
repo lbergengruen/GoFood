@@ -1,6 +1,8 @@
 #superMenu{
 	margin: 0px 5% 0 5%;
 	background-color:rgba(0, 0, 0, 0.5);
+	padding-bottom: 40px;
+	border-bottom: solid 5px #000000;
 }
 
 .separador1{
@@ -22,12 +24,7 @@
 	margin: 0;
 	padding-top: 10px;
 	font-weight: bold;
-	color: #ffffff;
-}
-
-#indice{
-	text-align: center;
-	margin-left: 0px;
+	color: #DED890;
 }
 
 #superMenu h2{
@@ -35,6 +32,26 @@
 	padding-top: 10px;
 	font-weight: bold;
 	color: #eca1a6;
+	font-size: 34px;
+}
+
+#superMenu h3{
+	color: #DED890;
+	margin-left: 50px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#superMenu h4{
+	color: #eca1a6;
+	padding: 0 0 0 0;
+	font-size: 25px;
+}
+
+h2#indice{
+	text-align: center;
+	margin-left: 0px;
+	color: #DED890;
 }
 
 .Primer-col{
@@ -47,17 +64,17 @@
 	padding-left: 20px;
 }
 
-h3{
-	color: #6082c0;
-	margin-left: 50px;
-	font-weight: bold;
+#GoMeat-link{
+	text-align: right;
 }
 
-h4{
-	color: #eca1a6;
-	font-weight: bold;
-	padding: 0 0 0 0;
-	font-size: 1.1em;
+#GoFish-link{
+	text-align: left;
+}
+
+#carrito-link{
+	margin: 30px 0 30px;
+	text-align: center;
 }
 
 .indice-col{
@@ -75,15 +92,13 @@ h4{
 }
 
 #superMenu a:hover{
-	font-weight: bold;
+	font-weight: bolder;
 }
 
 .pedidoText{
 	color: #ffffff;
 	margin: 0 0 0 0px;
 }
-
-
 
 #superMenu .item{
 	height: 100px;
@@ -134,3 +149,52 @@ h4{
 	top: 4px;
 	left: 0%;
 }
+
+/*****************CARRITO********************/
+
+#carrito{
+	margin: 0px 5% 0 5%;
+	background-color:rgba(230, 225, 225, 0.75);
+	height: 1000px;/******************************************HAY QUE SACAR***********/
+	border-top: solid 5px #ffffff;
+}
+
+#carrito h1{
+	text-align: center;
+	font-weight: bold;
+	color: #000000;
+}
+
+#CajaPedido{
+	padding: 0px 5% 0 5%;
+	margin-top: 20px;
+	margin-left: 5%;
+	width: 40%;
+	background-color:rgba(230, 225, 225, 1);
+}
+
+#submit_botton{
+	text-align: left;
+	margin-bottom: 10px;
+  }
+  
+  
+  a.submit:hover, a.submit:visited, a.submit:active, a.submit:link{
+	text-decoration:none;
+	background-color: #ff6600;
+	border: 5px solid #ffffff;
+	color: #ffffff;
+	padding: 10px 5vw 10px 6vw;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 30%;
+	margin: 10px auto 0 auto;
+	font-family: "candara";
+  }
+  
+  a.submit:hover{
+	font-size: 18px;
+  }
