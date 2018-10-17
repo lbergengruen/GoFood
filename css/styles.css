@@ -145,38 +145,51 @@ a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a
   margin: 0 5% 0 5%;
   padding: 0;
   width: 90%;
+  border: 8px solid #383833;
+  background-color: rgb(0, 0, 0);
+  font-family: "bookman old style";
+  font-size: 15px;
+  font-style: italic;
 }
 
 .cartel{
-  height: 200px;
+  height: 140px;
   width: 100%;
+  /*
   border: 10px solid #383833;
+  */
   vertical-align: middle;
 }
 
 .cartel p{
-  font-weight: bold;
+  padding: 8px;
+  padding-top: 30px;
   text-align: left;
-  height: 200px;
+  height: auto;
+}
+
+.cartel p.cita{
+  padding-top: 0;
+  font-style: none;
+  font-size: 13px;
+  text-align: right;
 }
 
 #c1{
-  background-color: #B62511;
-  border-right: 5px solid #383833;
-  color: #C9C1B7;
+  background-color: rgb(0, 0, 0);
+  border-right: 0.5px solid rgb(248, 248, 205);
+  color: rgb(248, 248, 205);
 }
 
 #c2{
-  background-color: #A7A04E;
-  border-left: 5px solid #383833;
-  border-right: 5px solid #383833;
-  color: #23231E;
+  background-color: rgb(0, 0, 0);
+  border-right: 0.5px solid rgb(248, 248, 205);
+  color: rgb(248, 248, 205);
 }
 
 #c3{
   background-color: #000;
-  border-left: 5px solid #383833;
-  color: #C9C1B7;
+  color: rgb(248, 248, 205);
 }
 
 
@@ -449,9 +462,6 @@ a.calcBotton:hover{
     top: 0px;
   }
 
-  .cartel{
-    font-size: 30px;
-  }
 
   .visible-lg{
     visibility: visible;
@@ -497,7 +507,7 @@ a.calcBotton:hover{
     padding-right: 15px;
     padding-left: 15px;
     float: left;
-    width: 33.3%;
+    width: 33.333%;
   }
   .col-lg-3 {
     position: relative;
@@ -521,8 +531,12 @@ a.calcBotton:hover{
     top: 0px;
   }
 
-  .cartel{
-    font-size: 28px;
+  #c2{
+    border: 0;
+  }
+
+  #c3{
+    border-top : 0.5px solid rgb(248, 248, 205);
   }
 
   .quienes_image{
@@ -602,7 +616,15 @@ a.calcBotton:hover{
   }
 
   .cartel{
-    font-size: 20px;
+    height: auto;
+  }
+
+  #c1{
+    border: 0;
+  }
+
+  #c2{
+    border: 0;
   }
 
   .visible-sm{
@@ -635,7 +657,15 @@ a.calcBotton:hover{
     }
 
     .cartel{
-      font-size: 20px;
+      height: auto;
+    }
+
+    #c1{
+      border: 0;
+    }
+  
+    #c2{
+      border: 0;
     }
 
     #calculatorMenu{
@@ -680,7 +710,15 @@ a.calcBotton:hover{
   }
 
   .cartel{
-    font-size: 20px;
+    height: auto;
+  }
+
+  #c1{
+    border: 0;
+  }
+
+  #c2{
+    border: 0;
   }
 
   #calculatorMenu{
@@ -715,6 +753,18 @@ a.calcBotton:hover{
 
   #header-nav{
     margin:0;
+  }
+
+  .cartel{
+    height: auto;
+  }
+
+  #c1{
+    border: 0;
+  }
+
+  #c2{
+    border: 0;
   }
 
   #calculatorMenu{
