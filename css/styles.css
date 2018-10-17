@@ -372,8 +372,8 @@ a.calcBotton:hover{
 }
 
 #lista_contacto{
+  width: 100%;
   color: #23231E;
-  text-align: left;
   padding-top: 35px;
   padding-bottom: 20px;
   text-decoration: none;
@@ -387,6 +387,7 @@ a.calcBotton:hover{
 .elemento_cont{
   padding-bottom: 10px;
   padding-top: 10px;
+  width: 100%;
 }
 
 .titulito{
@@ -401,6 +402,8 @@ a.calcBotton:hover{
 
 .textito{
   padding-left: 12px;
+  display: inline-block;
+  text-align: right;
 }
 
 #insert_nombre{
