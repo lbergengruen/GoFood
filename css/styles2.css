@@ -73,11 +73,17 @@ h3{
 	height: 45px;
 }
 
+.cantidad-precio{
+	width: 80px;
+	position: relative;
+	float: right;
+}
+
 .cantidad{
 	float: left;
 	position: relative;
 	top: 0%;
-	left: 75%;
+	left: 0%;
 	width: 40px;
 	color: #000000;
 	text-align: center;
@@ -88,6 +94,6 @@ h3{
 	float: left;
 	text-align: right;
 	width: 30px;
-	top: 5%;
-	left: 75%;
+	top: 4px;
+	left: 0%;
 }
