@@ -1,11 +1,3 @@
-.carousel-inner .item img{
-  border: 10px;
-  border-color: #000;
-  margin: auto;
-  height: 70%;
-  width: 87%;
-}
-
 
 #wholePage{
   /*background-color: #000;*/
@@ -17,6 +9,7 @@
   height: 100%;
   min-height: 1000px;
 }
+
 
 /***** Header ******/
 
@@ -115,9 +108,7 @@
   line-height: 100%;
 }
 
-.container{
-  width: 90%;
-}
+/********Carousel********/
 
 #myCarousel{
   margin: 0px 5% 0 5%;
@@ -125,6 +116,13 @@
   width: 90%;
 }
 
+.carousel-inner .item img{
+  border: 10px;
+  border-color: #000;
+  margin: auto;
+  height: 70%;
+  width: 87%;
+}
 
 .carousel-caption {
   background-color:rgba(0, 0, 0, 0.5);
@@ -146,6 +144,8 @@
 a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a.carousel-control:active{
   opacity: 0;
 }
+
+/**********Cartelera************/
 
 #cartelera{
   height: auto;
@@ -199,6 +199,7 @@ a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a
   color: rgb(248, 248, 205);
 }
 
+/*************Pedir YA!!*************/
 
 #bottons {
   border: 10px solid #978D7A;
@@ -247,6 +248,8 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   border: 10px;
   border-color: #ffffff;
 }
+
+/************Calculadora***********/
 
 #calculatorMenu {
   border: 10px solid #000000;
@@ -301,6 +304,8 @@ a.calcBotton:hover{
   font-size: 24px;
 }
 
+/************Quienes somos**************/
+
 #infoMenu{
   border: 10px solid #000000;
   margin: 0 5% 0 5%;
@@ -342,6 +347,8 @@ a.calcBotton:hover{
   margin:0;
   display: inline-block;
 }
+
+/************Contacto*************/
 
 #contacto {
   border: 10px solid #000000;
@@ -419,6 +426,8 @@ a.calcBotton:hover{
   color: #eee;
 }
 
+/************Footer**************/
+
 #footer{
   height:120px;
   background-color: #B62511;
@@ -429,7 +438,7 @@ a.calcBotton:hover{
 
 
 
-/*****End Jumbotron *****/
+/*****End Page *****/
 .visible-lg{
   visibility: hidden;
 }
@@ -448,6 +457,9 @@ a.calcBotton:hover{
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
+
+  /************Header************/
+
   .navbar>.container .navbar-brand{
     margin: 0px 0 0 20px;
   }
@@ -457,6 +469,8 @@ a.calcBotton:hover{
     top: 0px;
   }
 
+
+  /************Extra***********/
 
   .visible-lg{
     visibility: visible;
@@ -517,6 +531,8 @@ a.calcBotton:hover{
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   
+  /************Header************/
+
   .navbar>.container .navbar-brand{
     margin: 0px 0 0 20px;
   }
@@ -526,6 +542,8 @@ a.calcBotton:hover{
     top: 0px;
   }
 
+  /************Cartelera************/
+
   #c2{
     border: 0;
   }
@@ -533,6 +551,8 @@ a.calcBotton:hover{
   #c3{
     border-top : 0.5px solid rgb(248, 248, 205);
   }
+
+  /************Quienes Somos************/
 
   .quienesSomos_title>p{
     font-size: 2.5em;
@@ -549,6 +569,8 @@ a.calcBotton:hover{
   .quienes_image img{
     width: 100%;
   }
+
+  /************Extra************/
 
   .visible-md{
   visibility: visible;
@@ -609,6 +631,8 @@ a.calcBotton:hover{
 /********** Small devices only **********/
 @media (min-width: 870px) and (max-width: 992px) {
   
+  /************Header************/
+
   .navbar>.container .navbar-brand{
     margin: 0px 0 0 20px;
   }
@@ -617,6 +641,8 @@ a.calcBotton:hover{
     position: relative;
     top: 0px;
   }
+
+  /************Cartelera************/
 
   .cartel{
     height: auto;
@@ -630,6 +656,8 @@ a.calcBotton:hover{
     border: 0;
   }
 
+  /************Quienes Somos************/
+
   .quienesSomos_title>p{
     font-size: 2.5em;
     text-align: center;
@@ -640,9 +668,13 @@ a.calcBotton:hover{
     text-align: center;
   }
 
+  /************Contacto************/
+
   .contacto_titulo{
     font-size: 2.5em;
   }
+
+  /************Extra************/
 
   .visible-sm{
     visibility: visible;
@@ -664,7 +696,10 @@ a.calcBotton:hover{
 }
 /*********SM-XS Devices********/
   @media (min-width: 768px) and (max-width: 870px) {
-      .navbar>.container .navbar-brand{
+    
+    /************Header************/
+    
+    .navbar>.container .navbar-brand{
       margin: 0px 0 0 20px;
     }
 
@@ -672,6 +707,8 @@ a.calcBotton:hover{
       position: relative;
       top: 0px;
     }
+
+    /************Cartelera************/
 
     .cartel{
       height: auto;
@@ -685,6 +722,8 @@ a.calcBotton:hover{
       border: 0;
     }
 
+    /************Quienes somos************/
+
     .quienesSomos_title>p{
       font-size: 2.5em;
       text-align: center;
@@ -695,9 +734,17 @@ a.calcBotton:hover{
       text-align: center;
     }
 
+    /************Calculadora************/
+
     #calculatorMenu{
       height: auto;
     }
+
+    #navCalculadoraButton{
+      width: 0px;
+    }
+
+    /************Contacto************/
 
     .contacto_titulo{
       font-size: 2.5em;
@@ -707,12 +754,10 @@ a.calcBotton:hover{
       padding: 0;
     }
 
+    /************Extra************/
+
     .hidden-sx{
       visibility: hidden;
-    }
-
-    #navCalculadoraButton{
-      width: 0px;
     }
 
     .visible-sm{
@@ -736,10 +781,22 @@ a.calcBotton:hover{
 /********** Extra small devices only **********/
 @media (min-width: 471px) and (max-width: 767px) {
   
+  /************Header************/
+
   #header-nav{
     margin: 0;
     width: 100%;
   }
+
+  .navbar-brand a h1{
+    font-size: 10vw;
+  }
+
+  #navbarToggle{
+    margin-top: 40px;
+  }
+
+  /************Carousel************/
 
   #myCarousel{
     margin: 0;
@@ -755,10 +812,26 @@ a.calcBotton:hover{
     left:20%;
   }
 
+  /************Cartelera************/
+
   #cartelera{
     margin: 0;
     width: 100%;
   }
+
+  .cartel{
+    height: auto;
+  }
+
+  #c1{
+    border: 0;
+  }
+
+  #c2{
+    border: 0;
+  }
+
+  /************Pedir YA!!************/
 
   #bottons {
     margin: 0;
@@ -812,43 +885,23 @@ a.calcBotton:hover{
     margin: 0;
   }
 
+  /************Calculadora************/
+
   #calculatorMenu {
     margin: 0;
     width: 100%;
+    height: auto;
   }
 
   .calculadora_title {
     font-size: 2.6em;
   }
 
+  /************Quienes Somos************/
+
   #infoMenu{
     margin: 0;
     width: 100%;
-  }
-
-  #contacto{
-    margin: 0;
-    width: 100%;
-  }
-
-  .navbar-brand a h1{
-    font-size: 10vw;
-  }
-
-  #navbarToggle{
-    margin-top: 40px;
-  }
-
-  .cartel{
-    height: auto;
-  }
-
-  #c1{
-    border: 0;
-  }
-
-  #c2{
-    border: 0;
   }
 
   .quienesSomos_title>p{
@@ -861,8 +914,11 @@ a.calcBotton:hover{
     text-align: center;
   }
 
-  #calculatorMenu{
-    height: auto;
+  /************Contacto************/
+
+  #contacto{
+    margin: 0;
+    width: 100%;
   }
 
   .contacto_titulo{
@@ -872,6 +928,8 @@ a.calcBotton:hover{
   #info_contacto {
     text-align: center;
   }
+
+  /************Extra************/
 
   .visible-xs{
     visibility: visible;
@@ -888,6 +946,9 @@ a.calcBotton:hover{
 }
 
 @media (max-width: 470px){
+
+  /************Header************/
+
   .navbar-brand a h1{
     font-size: 13vw;  
   }
@@ -896,6 +957,23 @@ a.calcBotton:hover{
     margin: 0;
     width: 100%;
   }
+
+  #navbarToggle{
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-right:20px;
+    padding:5px;
+  }
+
+  .navbar-header{
+    margin:0;
+  }
+
+  #header-nav>div.container{
+    padding: 0;
+  }
+
+  /************Carousel************/
 
   #myCarousel{
     margin: 0;
@@ -908,10 +986,26 @@ a.calcBotton:hover{
     height: 100%;
   }
 
+  /************Cartelera************/
+
   #cartelera{
     margin: 0;
     width: 100%;
   }
+
+  .cartel{
+    height: auto;
+  }
+
+  #c1{
+    border: 0;
+  }
+
+  #c2{
+    border: 0;
+  }
+
+  /************Pedir YA!!************/
 
   #bottons {
     margin: 0;
@@ -922,8 +1016,9 @@ a.calcBotton:hover{
   }
 
   .botton {
+    margin-top: 20px;
     width:100%;
-    height: 100%;
+    height: auto;
   }
 
   a#pedirBoton:link, a#pedirBoton:visited, a#pedirBoton:hover, a#pedirBoton:active{
@@ -948,10 +1043,17 @@ a.calcBotton:hover{
     height:100%;
     width: 100%;
     text-align: center;
-    padding-top: 13px;
+    vertical-align: center;
+    padding: 0;
     font-family: "cooper black";
+    font-size: 10vw;
     color: #000000;
     opacity: 1;
+  }
+
+  .botton>a.botton{
+    width: 0;
+    height: 0;
   }
 
   .botton_image {
@@ -960,9 +1062,16 @@ a.calcBotton:hover{
     margin: 0;
   }
 
+  .botton>p{
+    margin: 0;
+  }
+
+  /************Calculadora************/
+
   #calculatorMenu {
     margin: 0;
     width: 100%;
+    height: auto;
   }
 
   .calculadora_title {
@@ -973,37 +1082,16 @@ a.calcBotton:hover{
     font-size: 1em;
   }
 
+  .calculadora_title {
+    font-size: 8vw;
+    padding: 20px 0px 20px 0px;
+  }
+
+  /************Quienes Somos************/
+
   #infoMenu{
     margin: 0;
     width: 100%;
-  }
-
-  #contacto{
-    margin: 0;
-    width: 100%;
-  }
-
-  #navbarToggle{
-    margin-top: 25px;
-    margin-left: 0px;
-    margin-right:20px;
-    padding:5px;
-  }
-
-  #header-nav{
-    margin:0;
-  }
-
-  .cartel{
-    height: auto;
-  }
-
-  #c1{
-    border: 0;
-  }
-
-  #c2{
-    border: 0;
   }
 
   .quienesSomos_title{
@@ -1021,41 +1109,11 @@ a.calcBotton:hover{
     text-align: center;
   }
 
-  #calculatorMenu{
-    height: auto;
-  }
+  /************Contacto************/
 
-  .calculadora_title {
-    font-size: 8vw;
-    padding: 20px 0px 20px 0px;
-  }
-
-  #calculatorMenu>p{
-    font-size: 1em;
-  }
-
-  .navbar-header{
-    margin:0;
-  }
-
-  #header-nav>div.container{
-    padding: 0;
-  }
-
-  .botton_title{
-    font-size: 10vw;
-    width: 100%;
-    vertical-align: center;
-    padding-top: 20px 0px 20px 0px;
-  }
-  
-  .botton{
-    width: 100%;
-    height: 100%;
-  }
-
-  .botton>p{
+  #contacto{
     margin: 0;
+    width: 100%;
   }
 
   .contacto_titulo{
@@ -1083,6 +1141,8 @@ a.calcBotton:hover{
   .textito{
     font-size: 4vw;
   }
+
+  /************Extra************/
 
   .visible-xs{
     visibility: visible;
