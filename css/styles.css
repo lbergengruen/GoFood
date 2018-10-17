@@ -196,11 +196,6 @@ a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a
 #bottons {
   border: 10px solid #978D7A;
   margin: 0 5% 0 5%;
-  /*
-  background-image: url("../images/fondoPedido.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;*/
   background-color:rgba(256, 256, 220, 0.5);
   height: 350px;
   text-align: center;
@@ -228,10 +223,6 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   text-align: center;
   font-size: 3em;
   padding-top: 13px;
-  /*
-  margin-left: 440px;
-  margin-bottom: 0;
-  */
   font-family: "cooper black";
   color: #000000;
   opacity: 1;
@@ -240,10 +231,6 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
 .botton_image {
   width: 250px;
   height: 250px;
-  /*
-  position: relative;
-  left: 440px;
-  */
   margin-bottom: 40px;
 }
 
@@ -310,7 +297,7 @@ a.calcBotton:hover{
 #infoMenu{
   border: 10px solid #000000;
   margin: 0 5% 0 5%;
-  padding-right: 0;
+  padding: 0;
   background-color: #333333;
   height: auto;
   width: 90%;
@@ -353,6 +340,7 @@ a.calcBotton:hover{
   border: 10px solid #000000;
   margin: 0 5% 0 5%;
   padding-right: 0;
+  padding-left: 0;
   background-color: #A7A04E;
   height: auto;
   width: 90%;
@@ -645,6 +633,10 @@ a.calcBotton:hover{
     text-align: center;
   }
 
+  .contacto_titulo{
+    font-size: 2.5em;
+  }
+
   .visible-sm{
     visibility: visible;
   }
@@ -698,6 +690,14 @@ a.calcBotton:hover{
 
     #calculatorMenu{
       height: auto;
+    }
+
+    .contacto_titulo{
+      font-size: 2.5em;
+    }
+
+    #info_contacto {
+      padding: 0;
     }
 
     .hidden-sx{
@@ -808,6 +808,14 @@ a.calcBotton:hover{
 
   #calculatorMenu{
     height: auto;
+  }
+
+  .contacto_titulo{
+    font-size: 2.5em;
+  }
+
+  #info_contacto {
+    text-align: center;
   }
 
   .visible-xs{
@@ -952,6 +960,32 @@ a.calcBotton:hover{
 
   .botton>p{
     margin: 0;
+  }
+
+  .contacto_titulo{
+    font-size: 6vw;
+    padding: 0;
+  }
+
+  #contacto_msj {
+    padding: 0;
+  }
+
+  #lista_contacto{
+    padding-left: 5px;
+  }
+
+  .elemento_cont {
+    padding-bottom: 1px;
+    padding-top: 1px;
+  }
+
+  .titulito{
+    font-size: 5vw;
+  }
+  
+  .textito{
+    font-size: 4vw;
   }
 
   .visible-xs{
