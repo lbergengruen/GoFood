@@ -155,7 +155,8 @@ h2#indice{
 #carrito{
 	margin: 0px 5% 0 5%;
 	background-color:rgba(230, 225, 225, 0.75);
-	height: 1000px;/******************************************HAY QUE SACAR***********/
+	min-height: 800px;
+	height: auto;
 	border-top: solid 5px #ffffff;
 }
 
@@ -173,7 +174,7 @@ h2#indice{
 }
 
 #CajaDatos{
-	padding: 0px 5% 0 5%;
+	padding: 0 5% 0 4%;
 	margin: 20px 5% 0 5%;
 	width: 40%;
 	background-color:rgb(58, 57, 57);
@@ -207,4 +208,59 @@ a.submit:hover{
 
 #campos-datos{
 	margin: 5px 5px 5px 5px;
+	padding-bottom: 20px; 
+}
+
+#campos-datos input{
+	color: #000000;
+}
+
+#nombreCompleto{
+	width: 200px;
+}
+
+#direccion{
+	width: 350px;
+}
+
+#celular{
+	width: 100px;
+}
+
+#correo{
+	width: 250px;
+}
+
+#comentarios{
+	width: 350px;
+	height: 100px;
+}
+
+#CajaDatos p{
+	font-size: 0.8em;
+}
+
+#enviar_botton{
+	text-align: center;
+	margin-bottom: 10px;
+}
+    
+a.enviar:hover, a.enviar:visited, a.enviar:active, a.enviar:link{
+	text-decoration:none;
+	background-color: #00a81c;
+	border: 5px solid #000000;
+	color: #ffffff;
+	padding: 15px 7.5vw 15px 7.5vw;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 30%;
+	margin: 30px auto 30px auto;
+	font-family: "candara";
+}
+
+a.enviar:hover{
+	font-size: 22px;
 }
