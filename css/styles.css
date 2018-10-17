@@ -353,6 +353,7 @@ a.calcBotton:hover{
   border: 10px solid #000000;
   margin: 0 5% 0 5%;
   padding-right: 0;
+  padding-left: 0;
   background-color: #A7A04E;
   height: auto;
   width: 90%;
@@ -645,6 +646,10 @@ a.calcBotton:hover{
     text-align: center;
   }
 
+  .contacto_titulo{
+    font-size: 2.5em;
+  }
+
   .visible-sm{
     visibility: visible;
   }
@@ -698,6 +703,14 @@ a.calcBotton:hover{
 
     #calculatorMenu{
       height: auto;
+    }
+
+    .contacto_titulo{
+      font-size: 2.5em;
+    }
+
+    #info_contacto {
+      padding: 0;
     }
 
     .hidden-sx{
@@ -808,6 +821,14 @@ a.calcBotton:hover{
 
   #calculatorMenu{
     height: auto;
+  }
+
+  .contacto_titulo{
+    font-size: 2.5em;
+  }
+
+  #info_contacto {
+    text-align: center;
   }
 
   .visible-xs{
@@ -952,6 +973,32 @@ a.calcBotton:hover{
 
   .botton>p{
     margin: 0;
+  }
+
+  .contacto_titulo{
+    font-size: 6vw;
+    padding: 0;
+  }
+
+  #contacto_msj {
+    padding: 0;
+  }
+
+  #lista_contacto{
+    padding-left: 5px;
+  }
+
+  .elemento_cont {
+    padding-bottom: 1px;
+    padding-top: 1px;
+  }
+
+  .titulito{
+    font-size: 5vw;
+  }
+  
+  .textito{
+    font-size: 4vw;
   }
 
   .visible-xs{
