@@ -167,19 +167,25 @@ h2#indice{
 
 #CajaPedido{
 	padding: 0px 5% 0 5%;
-	margin-top: 20px;
-	margin-left: 5%;
+	margin: 20px 5% 0 5%;
 	width: 40%;
 	background-color:rgba(230, 225, 225, 1);
+}
+
+#CajaDatos{
+	padding: 0px 5% 0 5%;
+	margin: 20px 5% 0 5%;
+	width: 40%;
+	background-color:rgb(58, 57, 57);
+	color: #ffffff;
 }
 
 #submit_botton{
 	text-align: left;
 	margin-bottom: 10px;
-  }
-  
-  
-  a.submit:hover, a.submit:visited, a.submit:active, a.submit:link{
+}
+    
+a.submit:hover, a.submit:visited, a.submit:active, a.submit:link{
 	text-decoration:none;
 	background-color: #ff6600;
 	border: 5px solid #ffffff;
@@ -193,8 +199,12 @@ h2#indice{
 	border-radius: 30%;
 	margin: 10px auto 0 auto;
 	font-family: "candara";
-  }
-  
-  a.submit:hover{
+}
+
+a.submit:hover{
 	font-size: 18px;
-  }
+}
+
+#campos-datos{
+	margin: 5px 5px 5px 5px;
+}
