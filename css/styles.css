@@ -196,11 +196,6 @@ a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a
 #bottons {
   border: 10px solid #978D7A;
   margin: 0 5% 0 5%;
-  /*
-  background-image: url("../images/fondoPedido.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;*/
   background-color:rgba(256, 256, 220, 0.5);
   height: 350px;
   text-align: center;
@@ -228,10 +223,6 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   text-align: center;
   font-size: 3em;
   padding-top: 13px;
-  /*
-  margin-left: 440px;
-  margin-bottom: 0;
-  */
   font-family: "cooper black";
   color: #000000;
   opacity: 1;
@@ -240,10 +231,6 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
 .botton_image {
   width: 250px;
   height: 250px;
-  /*
-  position: relative;
-  left: 440px;
-  */
   margin-bottom: 40px;
 }
 
@@ -310,7 +297,7 @@ a.calcBotton:hover{
 #infoMenu{
   border: 10px solid #000000;
   margin: 0 5% 0 5%;
-  padding-right: 0;
+  padding: 0;
   background-color: #333333;
   height: auto;
   width: 90%;
