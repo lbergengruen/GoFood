@@ -37,7 +37,8 @@
 
 #superMenu h3{
 	color: #DED890;
-	margin-left: 50px;
+	margin-left: 5%;
+	margin-right: 5%;
 	font-weight: bold;
 	font-size: 30px;
 }
@@ -89,9 +90,14 @@ h2#indice{
 #superMenu a:link, #superMenu a:visited, #superMenu a:hover, #superMenu a:active{
 	text-decoration:none;
 	color: #ffffff;
+	padding-bottom: 30px;
 }
 
 #superMenu a:hover{
+	font-weight: bolder;
+}
+
+.T h4{
 	font-weight: bolder;
 }
 
@@ -125,11 +131,16 @@ h2#indice{
 	height: 45px;
 }
 
+.item-Title{
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
 .cantidad-precio{
-	width: 200px;
+	width: auto;
 	position: relative;
 	float: left;
-	left: 60%
+	left: 60%;
 }
 
 .cantidad{

@@ -573,6 +573,69 @@ a.calcBotton:hover{
     width: 100%;
   }
 
+  /************Pedido************/
+
+  .cantidad-precio{
+    width: auto;
+    position: relative;
+    float: left;
+    left: 50%;
+  }
+
+
+  #carrito{
+    min-height: 800px;
+  }
+
+  #CajaPedido h2{
+    font-size: 2.25em;
+  }
+
+  #CajaPedido p{
+    font-size: 1.1em;
+  }
+  
+  a.submit:hover, a.submit:visited, a.submit:active, a.submit:link{
+    padding: 10px 5vw 10px 6vw;
+    font-size: 18px;
+    margin: 5px auto 0 auto;
+  }
+  
+  a.submit:hover{
+    font-size: 20px;
+  }
+  
+
+  #CajaDatos h2{
+    font-size: 2.3em;
+  }
+
+  #CajaDatos p{
+    font-size: 1.1em;
+  }
+
+  #campos-datos{
+    font-size: 1em;
+  }
+
+  #campos-datos input{
+    width: 100%;
+  }
+
+  #comentarios{
+    height: 60px;
+  }
+      
+  a.enviar:hover, a.enviar:visited, a.enviar:active, a.enviar:link{
+    padding: 15px 7.5vw 15px 7.5vw;
+    font-size: 20px;
+  }
+  
+  a.enviar:hover{
+    font-size: 22px;
+  }
+
+
   /************Extra************/
 
   .visible-md{
@@ -677,6 +740,87 @@ a.calcBotton:hover{
     font-size: 2.5em;
   }
 
+  /************Pedido************/
+
+  #superMenu a:link, #superMenu a:visited, #superMenu a:hover, #superMenu a:active{
+    font-size: 1em;
+  }
+
+  .pedidoText {
+    margin: 0 10% 0 10%;
+  }
+
+  .item-Title{
+    margin-left: 10%;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  .item-Description{
+    margin-left: 10%;
+  }
+  
+
+  .cantidad-precio{
+    width: auto;
+    position: relative;
+    float: left;
+    left: 38%;
+  }
+
+  #carrito{
+    min-height: 750px;
+  }
+
+  #CajaPedido h2{
+    font-size: 2em;
+  }
+
+  #CajaPedido p{
+    font-size: 1em;
+  }
+  
+  a.submit:hover, a.submit:visited, a.submit:active, a.submit:link{
+    padding: 10px 5vw 10px 6vw;
+    font-size: 16px;
+    margin: 5px auto 0 auto;
+  }
+  
+  a.submit:hover{
+    font-size: 18px;
+  }
+  
+
+  #CajaDatos h2{
+    font-size: 1.9em;
+  }
+
+  #CajaDatos p{
+    font-size: 1em;
+  }
+
+  #campos-datos{
+    font-size: 1em;
+  }
+
+  #campos-datos input{
+    width: 100%;
+  }
+
+  #comentarios{
+    height: 60px;
+  }
+      
+  a.enviar:hover, a.enviar:visited, a.enviar:active, a.enviar:link{
+    padding: 15px 7.5vw 15px 7.5vw;
+    font-size: 18px;
+  }
+  
+  a.enviar:hover{
+    font-size: 20px;
+  }
+
+
   /************Extra************/
 
   .visible-sm{
@@ -694,6 +838,51 @@ a.calcBotton:hover{
     padding-left: 15px;
     float: left;
     width: 100%;
+  }
+
+  .col-sm-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 75%;
+  }
+
+  .col-sm-8 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 66.66%;
+  }
+
+  .col-sm-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 50%;
+  }
+
+  .col-sm-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 33.33%;
+  }
+
+  .col-sm-3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 25%;
   }
 
 }
@@ -757,6 +946,85 @@ a.calcBotton:hover{
       padding: 0;
     }
 
+    /************Pedido************/
+
+    #superMenu a:link, #superMenu a:visited, #superMenu a:hover, #superMenu a:active{
+      font-size: 1em;
+    }
+  
+    .pedidoText {
+      margin: 0 10% 0 10%;
+    }
+
+    .item-Title{
+      margin-left: -10%;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+  
+    .item-Description{
+      margin-left: -10%;
+    }
+    
+    .cantidad-precio{
+      width: auto;
+      position: relative;
+      float: left;
+      left: 60%;
+    }
+
+    #carrito{
+      min-height: 700px;
+    }
+  
+    #CajaPedido h2{
+      font-size: 2em;
+    }
+  
+    #CajaPedido p{
+      font-size: 1em;
+    }
+    
+    a.submit:hover, a.submit:visited, a.submit:active, a.submit:link{
+      padding: 10px 5vw 10px 6vw;
+      font-size: 16px;
+      margin: 5px auto 0 auto;
+    }
+    
+    a.submit:hover{
+      font-size: 18px;
+    }
+    
+    #CajaDatos h2{
+      font-size: 1.8em;
+    }
+  
+    #CajaDatos p{
+      font-size: 1em;
+    }
+  
+    #campos-datos{
+      font-size: 0.9em;
+    }
+  
+    #campos-datos input{
+      width: 100%;
+    }
+  
+    #comentarios{
+      height: 60px;
+    }
+        
+    a.enviar:hover, a.enviar:visited, a.enviar:active, a.enviar:link{
+      padding: 15px 7.5vw 15px 7.5vw;
+      font-size: 18px;
+    }
+    
+    a.enviar:hover{
+      font-size: 20px;
+    }
+
+
     /************Extra************/
 
     .hidden-sx{
@@ -778,6 +1046,60 @@ a.calcBotton:hover{
       padding-left: 15px;
       float: left;
       width: 100%;
+    }
+
+    .col-sx-12 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      float: left;
+      width: 100%;
+    }
+  
+    .col-sx-9 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      float: left;
+      width: 75%;
+    }
+  
+    .col-sx-8 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      float: left;
+      width: 66.66%;
+    }
+  
+    .col-sx-6 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      float: left;
+      width: 50%;
+    }
+  
+    .col-sx-4 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      float: left;
+      width: 33.33%;
+    }
+  
+    .col-sx-3 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      float: left;
+      width: 25%;
     }
   }
 
@@ -932,6 +1254,89 @@ a.calcBotton:hover{
     text-align: center;
   }
 
+  /************Pedido************/
+
+  #superMenu a:link, #superMenu a:visited, #superMenu a:hover, #superMenu a:active{
+    font-size: 1em;
+  }
+
+  .pedidoText {
+    margin: 0 10% 0 10%;
+  }
+
+  .item-Title{
+    margin-left: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  .item-Description{
+    margin-left: 10px;
+  }
+  
+  
+  .cantidad-precio{
+    width: auto;
+    position: relative;
+    float: left;
+    left: 40%;
+  }
+
+  #carrito{
+    min-height: 700px;
+  }
+
+  #CajaPedido h2{
+    font-size: 1.6em;
+  }
+
+  #CajaPedido p{
+    font-size: 0.9em;
+  }
+  
+  a.submit:hover, a.submit:visited, a.submit:active, a.submit:link{
+    padding: 7.25px 3.75vw 7.25px 4.5vw;
+    font-size: 14px;
+    margin: 5px auto 0 auto;
+  }
+  
+  a.submit:hover{
+    font-size: 16px;
+  }
+  
+
+  #CajaDatos h2{
+    font-size: 1.5em;
+  }
+
+  #CajaDatos p{
+    font-size: 0.8em;
+  }
+
+  #campos-datos{
+    font-size: 0.8em;
+  }
+
+  #campos-datos input{
+    width: 100%;
+  }
+
+  #comentarios{
+    height: 60px;
+  }
+      
+  a.enviar:hover, a.enviar:visited, a.enviar:active, a.enviar:link{
+    padding: 7.5px 3.75vw 7.5px 3.75vw;
+    font-size: 16px;
+  }
+  
+  a.enviar:hover{
+    font-size: 20px;
+  }
+
+
+
+
   /************Extra************/
 
   .visible-xs{
@@ -945,6 +1350,60 @@ a.calcBotton:hover{
     padding-left: 15px;
     float: left;
     width: 100%;
+  }
+
+  .col-xs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+
+  .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 75%;
+  }
+
+  .col-xs-8 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 66.66%;
+  }
+
+  .col-xs-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 50%;
+  }
+
+  .col-xs-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 33.33%;
+  }
+
+  .col-xs-3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 25%;
   }
 }
 
@@ -1145,6 +1604,92 @@ a.calcBotton:hover{
     font-size: 4vw;
   }
 
+  /************Pedido************/
+  #superMenu a:link, #superMenu a:visited, #superMenu a:hover, #superMenu a:active{
+    font-size: 0.8em;
+  }
+
+  .pedidoText {
+    margin: 0 10% 0 10%;
+  }
+
+  #superMenu h3{
+    font-size: 25px;
+  }
+
+  .item-Title{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-left: 35px;
+    padding-top: 10px;
+  }
+
+  .item-Description{
+    visibility: hidden;
+  }
+
+  .cantidad-precio{
+    width: auto;
+    position: relative;
+    float: left;
+    top: -30%;
+    left: 20%;
+  }
+
+  #carrito{
+    min-height: 700px;
+  }
+
+  #CajaPedido h2{
+    font-size: 1.5em;
+  }
+
+  #CajaPedido p{
+    font-size: 0.8em;
+  }
+  
+  a.submit:hover, a.submit:visited, a.submit:active, a.submit:link{
+    padding: 5px 2.5vw 5px 3vw;
+    font-size: 12px;
+    margin: 5px auto 0 auto;
+  }
+  
+  a.submit:hover{
+    font-size: 14px;
+  }
+  
+
+  #CajaDatos h2{
+    font-size: 1.2em;
+  }
+
+  #CajaDatos p{
+    font-size: 0.6em;
+  }
+
+  #campos-datos{
+    font-size: 0.8em;
+  }
+
+  #campos-datos input{
+    width: 90px;
+  }
+
+  #comentarios{
+    height: 60px;
+  }
+      
+  a.enviar:hover, a.enviar:visited, a.enviar:active, a.enviar:link{
+    padding: 7.5px 3.75vw 7.5px 3.75vw;
+    font-size: 14px;
+  }
+  
+  a.enviar:hover{
+    font-size: 18px;
+  }
+
+  
+
   /************Extra************/
 
   .visible-xs{
@@ -1154,6 +1699,60 @@ a.calcBotton:hover{
   
   .hidden-xxs{
     visibility: hidden;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+
+  .col-xxs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 75%;
+  }
+
+  .col-xxs-8 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 66.66%;
+  }
+
+  .col-xxs-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 50%;
+  }
+
+  .col-xxs-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 33.33%;
+  }
+
+  .col-xxs-3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 25%;
   }
   
 }
