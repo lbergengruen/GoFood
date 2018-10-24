@@ -586,6 +586,7 @@ label.container:hover input ~ .tipoCorte {
 /* When the checkbox is checked, add a blue background */
 label.container input:checked ~ .tipoCorte{
   opacity: 1;
+  background-color: #ff3c00;
 }
 
 
