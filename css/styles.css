@@ -439,6 +439,154 @@ a.calcBotton:hover{
 }
 
 
+/************************************  CALCULADORA  *******************************************/
+
+#calculadoraPage{
+	margin: 0px 5% 0 5%;
+	background-color:rgba(230, 225, 225, 0.75);
+	min-height: 400px;
+	height: auto;
+}
+
+h2.calculadora {
+  padding: 20px;
+  margin: 0;
+  text-align: center; 
+  font-size: 3em;
+  font-family: "cooper black";
+  color: #23231E;
+  opacity: 1;
+}
+
+#cantPersonas {
+  text-align: center;
+}
+
+h3.calculadora {
+  padding: 10px;
+  margin: 0;
+  font-family: "arial";
+  font-size: 2em;
+  color: #23231E;
+  font-weight: bold;
+}
+
+#campos {
+  width: 40%;
+  height: auto;
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  padding: 15px;
+  padding-left: 8%;
+  padding-right: 8%;
+  color: #181816;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "candara";
+  background-color: #ff6600;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  border-radius: 5%;
+}
+
+#nomCampos {
+  padding: 0;
+}
+
+#nomCampos>.linea {
+  padding: 10px;
+}
+
+#enterNom {
+  text-align: center;
+  padding: 0;
+
+}
+
+#enterNom>input {
+  margin: 7px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.cortes {
+  text-align: center;
+  padding: 10px;
+}
+
+h4.calculadora {
+  padding: 15px;
+  margin: 0;
+  font-family: "arial";
+  font-size: 2em;
+  font-weight: bold;
+  color: #23231E;
+}
+
+.tipoCarne {
+  padding: 20px;
+  margin: 0;
+  font-family: "arial";
+  font-size: 1.6em;
+  color: #23231E;
+  font-weight: bold;
+}
+
+/* Customize the label (the container) */
+label.container {
+  width: auto;
+  padding: 0;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+label.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.tipoCorte {
+  text-decoration:none;
+  background-color: #ff6600;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 2.5px 1.5vw 2.5px 1.5vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 20%;
+  margin: 6px;
+  font-family: "candara";
+  opacity: 0.7;
+  transition: 0.3s;
+
+}
+
+/* On mouse-over, add a grey background color */
+label.container:hover input ~ .tipoCorte {
+  opacity: 1;
+}
+
+/* When the checkbox is checked, add a blue background */
+label.container input:checked ~ .tipoCorte{
+  opacity: 1;
+}
 
 
 /*****End Page *****/
