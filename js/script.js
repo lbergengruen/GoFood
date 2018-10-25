@@ -11,7 +11,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 
 (function(global){
-  var recibo = {};
+  var recibo = "";
 
   var lista = ["Colita Cuadril", "Peceto", "Bife al Vacío", "Bife ancho", "Nalga feteada y tiernizada", "Arañita",
               "Entraña fina", "Bola de lomo", "Asado Premium", "Asado Angus", "Asado Feedlot", "Chorizo Parrillero",
@@ -30,10 +30,10 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
     targetElem.innerHTML = html;
   };
 
-  var calcularRecibo = function(selector, html){
+  var calcularRecibo = function(){
 
-    for (i = 1; i <=57 ; i++) { 
-      c = document.querySelector(".cantidad:nth-child("+i+")").value;
+    for (i = 1; i <=59 ; i++) { 
+      c = parseInt(document.querySelector(".cantidad:nth-child("+i+")").value);
 
       if(i=1){
 
@@ -41,11 +41,13 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 
       if(c!=0 && c!=""){
-        precio = document.querySelector("").value;
-        recibo=recibo+lista[i]+"("+c+" Unidades): $"+precio;
+        precio = parseInt(document.querySelector(".precio:nth-child("+i+")").innerText);
+        recibo=recibo+lista[i]+"("+c+" Unidades): <p class='align-right'>$"+c*precio+"</p><br>";
       }
 
     } 
+
+    insertHtml("#pedidoHecho", recibo);
 
   };
 
