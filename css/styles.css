@@ -657,8 +657,24 @@ h4.calculadora {
   outline: none;
 }
 
+.collapsibleB, .collapsibleC {
+  font-size: 1.7em;
+}
+
+.collapsibleA:after, .collapsibleB:after, .collapsibleC:after {
+  content: '\25BC';
+  font-size: 20px;
+  color: #23231E;
+  float: right;
+  padding: 8px 30px 8px 0;
+}
+
+.activeB:after {
+  content: "\25B2";
+}
+
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.activeB, .collapsible:hover {
+.activeB, .collapsibleA:hover, .collapsibleB:hover, .collapsibleC:hover  {
   transition: 0.3s;
   background-color:rgba(230, 225, 225, 0.75);
 }
