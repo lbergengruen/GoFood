@@ -110,6 +110,10 @@
 
 /********Carousel********/
 
+#main-content{
+  height: auto;
+}
+
 #myCarousel{
   margin: 0px 5% 0 5%;
   background-color:rgba(0, 0, 0, 0.5);
@@ -586,7 +590,7 @@ label.container:hover input ~ .tipoCorte {
 /* When the checkbox is checked, add a blue background */
 label.container input:checked ~ .tipoCorte{
   opacity: 1;
-  background-color: #ff3c00;
+  background-color: #089714;
 }
 
 
