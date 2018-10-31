@@ -466,7 +466,6 @@ button.contBotton:hover{
 #footer{
   height:90px;
   background-color: #B62511;
-  margin: 0px 40px 0px 40px;
   border-color: #000;
   border-width: 1px;
   border-style: solid;
@@ -1807,6 +1806,15 @@ label.container input:checked ~ .tipoCorte{
     padding: 20px 0px 20px 0px;
   }
 
+  a.calcBotton:hover, a.calcBotton:visited, a.calcBotton:active, a.calcBotton:link{
+    padding: 10px 12vw 10px 12vw;
+    font-size: 14px;
+  }
+  
+  a.calcBotton:hover{
+    font-size: 18px;
+  }
+
   /************Quienes Somos************/
 
   #infoMenu{
@@ -1824,12 +1832,20 @@ label.container input:checked ~ .tipoCorte{
     text-align: center;
   }
 
+  .quienesSomos_body {
+    padding: 0;
+  }
+
   .quienesSomos_body>p{
     font-size: 1em;
     text-align: center;
   }
 
   /************Contacto************/
+
+  #info_contacto {
+    padding: 0;
+  }
 
   #contacto{
     margin: 0;
@@ -1846,7 +1862,7 @@ label.container input:checked ~ .tipoCorte{
   }
 
   #lista_contacto{
-    padding-left: 5px;
+    padding: 5px 0 0 0;
   }
 
   .elemento_cont {
@@ -1860,6 +1876,15 @@ label.container input:checked ~ .tipoCorte{
   
   .textito{
     font-size: 4vw;
+  }
+
+  button.contBotton{
+    padding: 10px 12vw 10px 12vw;
+    font-size: 14px;
+  }
+  
+  button.contBotton:hover{
+    font-size: 18px;
   }
 
   /************Pedido************/
@@ -1951,6 +1976,7 @@ label.container input:checked ~ .tipoCorte{
   #footer {
     height: 70px;
     padding: 8px;
+    margin-top: 40px;
   }
 
   .fa {
