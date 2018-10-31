@@ -433,15 +433,97 @@ a.calcBotton:hover{
   color: #eee;
 }
 
+#contacto_botton{
+  text-align: center;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+
+button.contBotton{
+  text-decoration:none;
+  background-color: rgba(39, 39, 36, 0.37);
+  border: 5px solid #1f1d1d;
+  color: #1f1d1d;
+  padding: 20px 12vw 20px 12vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 30%;
+  margin: 20px auto 0 auto;
+  font-family: "candara";
+  margin-bottom: 10px;
+}
+
+button.contBotton:hover{
+  font-size: 24px;
+}
+
 /************Footer**************/
 
 #footer{
-  height:120px;
+  height:90px;
   background-color: #B62511;
   margin: 0px 40px 0px 40px;
   border-color: #000;
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+  margin: 0;
+  margin-top: 70px;
 }
 
+#socialMedia{
+  padding: 0;
+  padding-top: 10px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
+  margin: 8px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: rgb(255, 153, 0);
+  color: white;
+}
+
+#copyright {
+  text-align: right;
+  color: #000;
+  height: 90px;
+}
+#txt_copyright {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+
+}
 
 /************************************  CALCULADORA  *******************************************/
 
@@ -1487,6 +1569,24 @@ label.container input:checked ~ .tipoCorte{
     font-size: 20px;
   }
 
+ /************Footer************/
+  
+ .fa {
+    margin: 4px;
+  }
+
+  #copyright {
+    text-align: right;
+    font-size: 12px;
+    color: #000;
+    height: 90px;
+  }
+  #txt_copyright {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  
+  }
 
 
 
@@ -1561,6 +1661,11 @@ label.container input:checked ~ .tipoCorte{
 }
 
 @media (max-width: 470px){
+
+  #wholePage{
+    padding: 0;
+  }
+
 
   /************Header************/
 
@@ -1841,7 +1946,34 @@ label.container input:checked ~ .tipoCorte{
     font-size: 18px;
   }
 
+  /************Footer************/
   
+  #footer {
+    height: 70px;
+    padding: 8px;
+  }
+
+  .fa {
+    margin: 1px;
+    border-radius: 10%;
+    padding: 10px;
+    width: 33px;
+  }
+
+  #copyright {
+    text-align: center;
+    font-size: 10px;
+    color: #000;
+    height: 70px;
+  }
+  #txt_copyright {
+    padding-left: 2px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  
+  } 
+
 
   /************Extra************/
 
