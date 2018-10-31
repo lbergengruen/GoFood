@@ -9,53 +9,46 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
   });
 });
 
+var lista = ["Colita Cuadril", "Peceto", "Bife al Vacío", "Bife ancho", "Nalga feteada y tiernizada", "Arañita",
+  "Entraña fina", "Bola de lomo", "Asado Premium", "Asado Angus", "Asado Feedlot", "Chorizo Parrillero",
+  "Chorizo Doña Coca", "Chorizo con Morrón y Queso", "Salchicha Parrillera", "Salchicha con Queso",
+  "Morcilla Dulce", "Morcilla Salada", "Chinchulin", "Riñon", "Choto Parrillero", "Asado de Cerdo (Español)",
+  "Matambrito", "Bondiola", "Pamplona", "Chuleta de Cerdo", "Panceta Ahumada", "Lechon", "Milanesa de Carne",
+  "Milanesa de Pollo", "Milanesa de Jamon y Queso", "Pamplona de Pollo", "Arrollado de Pollo", "Brochettes de Pollo",
+  "Supremas Congeladas", "Filet Merluza", "Filet Pescadilla de Red", "Salmon", "Filet Palometa", "Filet Anchoas",
+  "Filet Brótola", "Filet Lenguado", "Filet Corvina Fresci","Filet Cazón", "Filet Panga", 
+  "Filet Corvina Congelado", "Filet Abadejo", "Pez Espada", "Medallones Merluza", "Milanesa de Merluza",
+  "Chiripirones Limpios", "Pulpitos", "Pulpa Camarón", "Pulpa de Mejillones", "Mix Mariscos", "Pulpa Langostinos",
+  "Pulpa Berberechos", "Langostinos Enteros"];
 
-(function(global){
+
+function insertHtml(selector, html) {
+  var targetElem = document.querySelector(selector);
+  targetElem.innerHTML = html;
+};
+
+if(document.querySelector(".submit") !== null){
+  document.querySelector(".submit").addEventListener("click", ingresarRecibo());
+}
+
+function ingresarRecibo(){
   var recibo = "";
 
-  var lista = ["Colita Cuadril", "Peceto", "Bife al Vacío", "Bife ancho", "Nalga feteada y tiernizada", "Arañita",
-              "Entraña fina", "Bola de lomo", "Asado Premium", "Asado Angus", "Asado Feedlot", "Chorizo Parrillero",
-              "Chorizo Doña Coca", "Chorizo con Morrón y Queso", "Salchicha Parrillera", "Salchicha con Queso",
-              "Morcilla Dulce", "Morcilla Salada", "Chinchulin", "Riñon", "Choto Parrillero", "Asado de Cerdo (Español)",
-              "Matambrito", "Bondiola", "Pamplona", "Chuleta de Cerdo", "Panceta Ahumada", "Lechon", "Milanesa de Carne",
-              "Milanesa de Pollo", "Milanesa de Jamon y Queso", "Pamplona de Pollo", "Arrollado de Pollo", "Brochettes de Pollo",
-              "Supremas Congeladas", "Filet Merluza", "Filet Pescadilla de Red", "Salmon", "Filet Palometa", "Filet Anchoas",
-              "Filet Brótola", "Filet Lenguado", "Filet Corvina Fresci","Filet Cazón", "Filet Panga", 
-              "Filet Corvina Congelado", "Filet Abadejo", "Pez Espada", "Medallones Merluza", "Milanesa de Merluza",
-              "Chiripirones Limpios", "Pulpitos", "Pulpa Camarón", "Pulpa de Mejillones", "Mix Mariscos", "Pulpa Langostinos",
-              "Pulpa Berberechos", "Langostinos Enteros"];
+  for (i=1; i<=lista.length ; i++) { 
+    console.log(i);
+    // c = parseInt(document.querySelector(".cantidad:nth-child("+i+")").value);
+    // if(i=1){
 
-  var insertHtml = function (selector, html) {
-    var targetElem = document.querySelector(selector);
-    targetElem.innerHTML = html;
-  };
+    // }
+    // if(c!=0 && c!=""){
+    //   precio = parseInt(document.querySelector(".precio:nth-child("+i+")").innerText);
+    //   recibo=recibo+lista[i]+"("+c+" Unidades): <p class='align-right'>$"+c*precio+"</p><br>";
+    // }
 
-  var calcularRecibo = function(){
-
-    for (i = 1; i <=59 ; i++) { 
-      c = parseInt(document.querySelector(".cantidad:nth-child("+i+")").value);
-
-      if(i=1){
-
-      }
-
-
-      if(c!=0 && c!=""){
-        precio = parseInt(document.querySelector(".precio:nth-child("+i+")").innerText);
-        recibo=recibo+lista[i]+"("+c+" Unidades): <p class='align-right'>$"+c*precio+"</p><br>";
-      }
-
-    } 
-
-    insertHtml("#pedidoHecho", recibo);
-
-  };
-
-  document.getElementById("submit").addEventListener("click", calcularRecibo());
-
-
-
-})();
+  } 
+  // insertHtml("#pedidoHecho", recibo);
+  
+};
 
 // (function (global) {
 
@@ -189,7 +182,9 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 
 var slideIndex = 0;
-carousel();
+if(document.getElementById("myCarousel") !== null){
+  carousel();
+}
 
 function carousel() {
     var i;
