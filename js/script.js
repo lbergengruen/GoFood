@@ -216,12 +216,12 @@ function carousel() {
     setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
+var coll = document.getElementsByClassName("collapsibleA");
+var j;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+for (j = 0; j < coll.length; j++) {
+  coll[j].addEventListener("click", function() {
+    this.classList.toggle("activeB");
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
@@ -230,3 +230,79 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+/*
+var coll = document.getElementsByClassName("collapsibleA");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("activeB");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+*/
+var coll = document.getElementsByClassName("collapsibleB");
+j = 0;
+
+for (j = 0; j < coll.length; j++) {
+  coll[j].addEventListener("click", function() {
+    this.classList.toggle("activeB");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+/*
+var coll = document.getElementsByClassName("collapsibleB");
+i = 0;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("activeB");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+*/
+var coll = document.getElementsByClassName("collapsibleC");
+j = 0;
+
+for (j = 0; j < coll.length; j++) {
+  coll[j].addEventListener("click", function() {
+    this.classList.toggle("activeB");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+/*
+var coll = document.getElementsByClassName("collapsibleC");
+i = 0;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("activeB");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+*/

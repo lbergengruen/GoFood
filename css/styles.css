@@ -6,8 +6,8 @@
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 100%;
-  min-height: 1000px;
+  height: auto;
+  min-height: 800px;
 }
 
 
@@ -643,8 +643,8 @@ h4.calculadora {
   color: #23231E;
 }
 
-.collapsible {
-  background-color: #eee;
+.collapsibleA, .collapsibleB, .collapsibleC {
+  background-color: rgba(39, 39, 36, 0);
   font-family: "arial";
   font-size: 2em;
   font-weight: bold;
@@ -658,16 +658,40 @@ h4.calculadora {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
+.activeB, .collapsible:hover {
+  transition: 0.3s;
+  background-color:rgba(230, 225, 225, 0.75);
 }
 
 /* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
+.contentA {
+  padding: 0;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  /*
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+  */
+}
+
+.contentB {
+  padding: 0;
+  display: none;
+  overflow: hidden;
+  /*
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+  */
+}
+
+.contentC {
+  padding: 0;
+  display: none;
+  overflow: hidden;
+  /*
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+  */
 }
 
 .tipoCarne {
