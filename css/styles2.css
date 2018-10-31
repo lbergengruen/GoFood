@@ -217,6 +217,15 @@ a.submit:hover, a.submit:visited, a.submit:active, a.submit:link{
 	font-family: "candara";
 }
 
+#pedidoHecho{
+	padding-left: 15px;
+	font-style: italic;
+}
+
+#pedidoHecho .separador2{
+	border-color: #000000;
+}
+
 a.submit:hover{
 	font-size: 18px;
 }
