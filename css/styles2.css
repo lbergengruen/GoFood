@@ -143,6 +143,10 @@ h2#indice{
 	left: 60%;
 }
 
+.precio{
+	width: 30px;
+}
+
 .cantidad{
 	/* float: left; */
 	position: relative;
