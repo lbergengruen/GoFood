@@ -2181,6 +2181,15 @@ button.subCalcBotton:hover{
   padding: 5px 5px 5px 0;
 }
 
+.cortes{
+  padding: 3px 0 0 0;
+}
+
+.tipoCorte {
+  margin: 4px;
+  font-size: 11px;
+}
+
   /************Extra************/
 
   .visible-xs{
