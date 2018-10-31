@@ -7,7 +7,6 @@
   background-position: center;
   background-size: cover;
   height: auto;
-  min-height: 800px;
 }
 
 
@@ -620,9 +619,8 @@ button.subCalcBotton{
   font-size: 16px;
   font-weight: bold;
   border-radius: 30%;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 10px auto;
   font-family: "candara";
-  margin-bottom: 10px;
 }
 
 button.subCalcBotton:hover{
@@ -1694,7 +1692,27 @@ label.container input:checked ~ .tipoCorte{
   
   }
 
+/*************************************** CALCULADORA ********************************************/
 
+#campos {
+  width: 60%;
+  margin-right: 20%;
+  margin-left: 20%;
+  font-size: 14px;
+}
+
+.collapsibleA {
+  font-size: 3.6vw;
+}
+
+.collapsibleB, .collapsibleC {
+  font-size: 3.2vw;
+}
+
+.collapsibleA:after, .collapsibleB:after, .collapsibleC:after {
+  font-size: 15px;
+  padding: 5px 12px 5px 0;
+}
 
   /************Extra************/
 
@@ -2112,6 +2130,56 @@ label.container input:checked ~ .tipoCorte{
   
   } 
 
+
+/*************************************** CALCULADORA ********************************************/
+
+h2.calculadora {
+  font-size: 1.5em;
+}
+
+h3.calculadora {
+  font-size: 1em;
+}
+
+#campos {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-size: 12px;
+}
+
+#calculadoraPage {
+  margin: 0;
+}
+
+#submitCalcBotton{
+  margin-bottom: 0;
+}
+
+button.subCalcBotton{
+  padding: 8px 3vw 8px 3vw;
+  font-size: 12px;
+  border-radius: 20%;
+  border: 3px solid #1f1d1d;
+  margin: 10px auto 10px auto;
+}
+
+button.subCalcBotton:hover{
+  font-size: 15px;
+}
+
+.collapsibleA {
+  font-size: 5vw;
+}
+
+.collapsibleB, .collapsibleC {
+  font-size: 4.5vw;
+}
+
+.collapsibleA:after, .collapsibleB:after, .collapsibleC:after {
+  font-size: 13px;
+  padding: 5px 5px 5px 0;
+}
 
   /************Extra************/
 
