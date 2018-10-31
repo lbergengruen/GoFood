@@ -168,7 +168,7 @@ h2#indice{
 /*****************CARRITO********************/
 
 #carrito{
-	margin: 0px 5% 0 5%;
+	margin: 0px 5% 0px 5%;
 	background-color:rgba(230, 225, 225, 0.75);
 	min-height: 800px;
 	height: auto;
