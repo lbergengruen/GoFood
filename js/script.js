@@ -44,7 +44,7 @@ function ingresarRecibo(window){
   
   for (i=1; i<=lista.length; i++) { 
     // console.log(i);
-    c = parseInt(document.getElementById("i"+i).value);
+    c = parseInt(document.getElementById("i"+ i).value);
     // console.log(c);
     if(i==1){
       recibo=recibo+"<br>GOMEAT<br>"
