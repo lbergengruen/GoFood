@@ -118,7 +118,8 @@ h2#indice{
 
 #superMenu .item-Picture img{
 	height: 100px;
-	width: 100px;
+	width: 120px;
+	object-fit: cover;
 }
 
 #superMenu .item-text{
