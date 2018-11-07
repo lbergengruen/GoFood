@@ -9,7 +9,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
   });
 });
 
-recibo = "";
+var recibo = "";
 
 var lista = ["Colita Cuadril", "Peceto", "Bife al Vacío", "Bife ancho", "Nalga feteada y tiernizada", "Arañita",
   "Entraña fina", "Bola de lomo", "Asado Premium", "Asado Angus", "Asado Feedlot", "Chorizo Parrillero",
@@ -34,10 +34,10 @@ function insertHtml(selector, html) {
 
 if(document.querySelector(".submit") !== null){
   document.querySelector(".submit").addEventListener("click", ingresarRecibo);
-}
+};
 
 function ingresarRecibo(window){
-  var recibo = "";
+  
   precioTotal = 0;
   // console.log(document.getElementById("i1").value);
   // console.log(document.querySelector(".cantidad").);

@@ -849,24 +849,24 @@
 					<div id="CajaDatos"	class="col-lg-6 col-md-6 col-sm-6 col-sx-12 col-xs-12">
 						<h2>Información</h2>
 						<p>Por favor ingrese sus datos:</p>
-						<div id="campos-datos">
-							*Nombre y Apellido:<br>
-							<input type="nombreCompleto" name="Nombre" id="nombreCompleto"> <br><br>
-							*Dirección Completa:<br>
-							<input type="direccion" name="Direccion" id="direccion"><br><br>
-							*Celular:<br>
-							<input type="celular" name="Celular" id="celular"><br><br>
-							*Correo:<br>
-							<input type="correo" name="Correo" id="correo"><br><br>
-							Algo que quieras decirnos?<br>
-							<input type="comentarios" name="Comentarios" id="comentarios"><br><br>
-						</div>
+						<form id="campos-datos">
+							<label for="nombreCompleto">*Nombre y Apellido:</label><br>
+							<input type="text" name="nombreCompleto" id="nombreCompleto"> <br><br>
+							<label for="direccion">*Direccion Completa:</label><br>
+							<input type="text" name="direccion" id="direccion"><br><br>
+							<label for="celular">*Celular:</label><br>
+							<input type="text" name="celular" id="celular"><br><br>
+							<label for="correo">*Correo:</label><br>
+							<input type="text" name="Correo" id="correo"><br><br>
+							<label for="comentarios">¿Algo que quieras decirnos?:</label><br>
+							<input type="text" name="comentarios" id="comentarios"><br><br>
+						</form>
 						<p>* Estos datos son obligatorios para poder enviar un pedido.</p>
 					</div>
 				</div>
 				<div id="mensaje"></div>
 				<div id="enviar_botton" class="col-lg-12 col-md-12 col-sm-12 col-sx-12 col-xs-12">
-					<a class="enviar" href="">Enviar Pedido</a>
+					<a class="enviar" href="#">Enviar Pedido</a>
 				</div>			
 			</div>
 			<div id="footer" class="container row col-lg-12 col-md-12 col-sm-12">
@@ -888,6 +888,7 @@
   	<script src="js/jquery-2.1.4.min.js"></script>
   	<script src="js/bootstrap.min.js"></script>
   	<script src="js/ajax-utils.js"></script>
- 	<script src="js/script.js"></script>
+	 <script src="js/script.js"></script>
+	 <script src="js/script2.js"></script>
 </body>
 </html>
