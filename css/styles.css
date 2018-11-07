@@ -589,6 +589,7 @@ h3.calculadora {
 #enterNom {
   text-align: center;
   padding: 0;
+  color: #23231E;
 
 }
 
@@ -630,6 +631,16 @@ button.subCalcBotton:hover{
 .cortes {
   text-align: center;
   padding: 10px;
+}
+
+.subtitulito{
+  color: #181816;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "candara";
 }
 
 h4.calculadora {
