@@ -30,3 +30,25 @@ function chequearYenviarMail(window){
     insertHtml("#mensaje", mensaje);
     // window.recibo = recibo;
 };
+
+if(document.querySelector(".contBotton") !== null){
+    document.querySelector(".contBotton").addEventListener("click", contactar);
+}
+
+function contactar(){
+    var mensaje = "";
+    nombre = document.getElementById("insert_nombre").value;
+    msj = document.getElementById("insert_msj").value;
+    
+    if(nombre != "Nombre" && msj != "Su mensaje va aqui..."){
+        mensaje = "<p style='color:green; font-weight: bold;'>Su mensaje ha sido enviado.<p>";
+    }
+
+    document.getElementById("insert_nombre").value = "Nombre";
+    document.getElementById("insert_msj").value = "Su mensaje va aqui...";
+
+
+
+    insertHtml("#mensaje", mensaje);
+    // window.recibo = recibo;
+};
