@@ -2121,7 +2121,7 @@ label.container input:checked ~ .tipoCorte{
   }
 
   #campos-datos input{
-    width: 90px;
+    width: 100%;
   }
 
   #comentarios{
