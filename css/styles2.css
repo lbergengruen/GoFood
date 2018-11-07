@@ -3,6 +3,7 @@
 	background-color:rgba(0, 0, 0, 0.5);
 	padding-bottom: 40px;
 	border-bottom: solid 5px #000000;
+	font-family: "arial", Helvetica ;
 }
 
 .separador1{
@@ -24,6 +25,7 @@
 	margin: 0;
 	padding-top: 10px;
 	font-weight: bold;
+	font-family: "arial", Helvetica ;
 	color: #DED890;
 }
 
@@ -31,6 +33,7 @@
 	margin: 0px 0 20px 0px;
 	padding-top: 10px;
 	font-weight: bold;
+	font-family: "arial", Helvetica ;
 	color: #eca1a6;
 	font-size: 34px;
 }
@@ -40,6 +43,7 @@
 	margin-left: 5%;
 	margin-right: 5%;
 	font-weight: bold;
+	font-family: "arial", Helvetica ;
 	font-size: 30px;
 }
 
@@ -174,6 +178,7 @@ h2#indice{
 	min-height: 800px;
 	height: auto;
 	border-top: solid 5px #ffffff;
+	font-family: "arial", Helvetica ;
 }
 
 #carrito h1{
