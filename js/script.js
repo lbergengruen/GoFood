@@ -67,16 +67,37 @@ function ingresarRecibo(window){
 var checkedValue = []; 
 var inputElements = document.getElementsByClassName('messageCheckbox');
 var j=0;
+var opcionesCarne = ["Carne con Hueso", "Carne sin hueso", "Chorizo", "Morcilla", "Riñon", "Chinchulin", "Choto",
+                    "Salchicha", "Pamplona", "Matambrito"];
+var proporciones = [6,5,1,1,1,1,1,2,3,3];
 
-for(var i=0; inputElements[i]; ++i){
-      if(inputElements[i].checked){
-           checkedValue[j] = (inputElements[i]).value;
-           ++j;
-           console.log(ckeckedValue);
-           break;
-      }
+
+if(document.querySelector(".subCalcBotton") !== null){
+  document.querySelector(".subCalcBotton").addEventListener("click", chequearLista);
 }
 
+function chequearLista() {
+  var calculo = "";
+  var hombre = 0.7;
+  var mujer = 0.5;
+  var niño = 0.35;
+  var puntosTotal = 0;
+  
+  for(var i=0; inputElements[i]; ++i){
+    if(inputElements[i].checked){
+        checkedValue[j] = (inputElements[i]).value;
+        puntosTotal = puntosTotal + proporciones[i];
+        ++j;
+    }
+  }
+  for(var i=0; i<=checkedValue.length; ++i){
+    if(checkedValue){
+
+    }
+  }
+  insertHtml("#calculoRealizado", calculo);
+  
+};
 
 // (function (global) {
 
