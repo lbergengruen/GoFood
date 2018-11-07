@@ -235,6 +235,7 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   font-size: 3em;
   padding-top: 13px;
   font-family: "cooper black";
+  font-weight: bold;
   color: #000000;
   opacity: 1;
 }
@@ -274,6 +275,7 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   width: 100%;
   text-align: center;
   font-size: 3em;
+  font-weight: bold;
   padding-top: 13px;
   margin: 10px 0 0 0;
   font-family: "cooper black";
@@ -322,6 +324,7 @@ a.calcBotton:hover{
 .quienesSomos_title>p{
   text-align: left;
   font-size: 3em;
+  font-weight: bold;
   padding-top: 13px;
   margin: 10px 0 0 0;
   font-family: "cooper black";
@@ -367,6 +370,7 @@ a.calcBotton:hover{
 .contacto_titulo{
   text-align: center;
   font-size: 3em;
+  font-weight: bold;
   padding-top: 13px;
   margin: 10px 0 0 0;
   font-family: "cooper black";
