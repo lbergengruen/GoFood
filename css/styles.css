@@ -2256,6 +2256,14 @@ button.subCalcBotton:hover{
 
   /************Extra************/
 
+  #CajaPedido {
+    text-align: center;
+  }
+
+  #submit_botton {
+    text-align: center;
+  }
+
   .visible-xs{
     visibility: visible;
   }
