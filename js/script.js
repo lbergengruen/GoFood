@@ -64,12 +64,11 @@ function ingresarRecibo(window){
   window.recibo = recibo;
 };
 
-var checkedValue = []; 
+
 var inputElements = document.getElementsByClassName('messageCheckbox');
-var j=0;
-var opcionesCarne = ["Carne con Hueso", "Carne sin hueso", "Chorizo", "Morcilla", "Riñon", "Chinchulin", "Choto",
-                    "Salchicha", "Pamplona", "Matambrito"];
-var proporciones = [6,5,1,1,1,1,1,2,3,3];
+var opcionesCarne = ["kg de Carne con Hueso", "kg de Carne sin hueso", " Chorizo/s", " Morcilla/s", " Riñon/es", 
+                    " Chinchulin/es", " Choto/s", " Salchicha/s", " Pamplona/s", " Matambrito/s"];
+var proporciones = [6,5,1,1,1,1,1,0.5,0.3,0.3];
 
 
 if(document.querySelector(".subCalcBotton") !== null){
@@ -78,27 +77,50 @@ if(document.querySelector(".subCalcBotton") !== null){
 
 function chequearLista() {
   var calculo = "Te recomendamos ";
-  var hombreProp = 0.7;
-  var mujerProp = 0.5;
-  var niñoProp = 0.35;
+  var checkedValue = []; 
+  var j=0;
+  var hombreProp = 0.6;
+  var mujerProp = 0.45;
+  var niñoProp = 0.3;
   var puntosTotal = 0;
   var hombres = parseInt(document.getElementById("hombres").value);
   var mujeres = parseInt(document.getElementById("mujeres").value);
   var niños = parseInt(document.getElementById("niños").value);
 
-  for(var i=0; inputElements[i]; ++i){
+  for(var i=0; inputElements[i]; i++){
     if(inputElements[i].checked){
         checkedValue[j] = i;
         puntosTotal = puntosTotal + proporciones[i];
-        ++j;
+        j++;
     }
   }
-  var arrayAux = [];
-  for(var i=0; i<=checkedValue.length; ++i){
-    arrayAux[i] = proporciones[checkedValue[i]];
-    
+  var totalKilos = 0;
 
+  for(var i=0; (i+1)<=checkedValue.length; i++){
+
+    totalKilos =
+    hombreProp*hombres*((proporciones[checkedValue[i]])/puntosTotal) + 
+    mujerProp*mujeres*((proporciones[checkedValue[i]])/puntosTotal) +
+    niñoProp*niños*((proporciones[checkedValue[i]])/puntosTotal);
+    totalKilos = totalKilos*10;
+    totalKilos = Math.round(totalKilos);
+    totalKilos = totalKilos/10;
+
+    if(checkedValue[i]==2 || checkedValue[i]==3 || checkedValue[i]==4 || checkedValue[i]==5 || checkedValue[i]==6 || 
+      checkedValue[i]==7 || checkedValue[i]==8 || checkedValue[i]==9){
+        totalKilos = totalKilos*10;
+        totalKilos = Math.round(totalKilos);
+    }
+
+    calculo = calculo + totalKilos + opcionesCarne[checkedValue[i]];
+
+    if(checkedValue.length == (i+1)){
+      calculo = calculo + ".";
+    }else{
+      calculo = calculo + ", ";
+    }
   }
+
   insertHtml("#calculoRealizado", calculo);
   
 };
