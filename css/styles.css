@@ -914,11 +914,24 @@ label.container input:checked ~ .tipoCorte{
 
   /************Pedido************/
 
+  .item-Title{
+    margin-top: 3px;
+    margin-left: 10%;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  .item-Description{
+    margin-left: 15%;
+    font-size: 0.9em;
+  }
+
+  
   .cantidad-precio{
     width: auto;
     position: relative;
     float: left;
-    left: 50%;
+    left: 45%;
   }
 
 
@@ -1090,13 +1103,15 @@ label.container input:checked ~ .tipoCorte{
   }
 
   .item-Title{
-    margin-left: 10%;
-    font-size: 1.1em;
+    margin-top: 3px;
+    margin-left: 18%;
+    font-size: 0.9em;
     font-weight: bold;
   }
 
   .item-Description{
-    margin-left: 10%;
+    margin-left: 20%;
+    font-size: 0.9em;
   }
   
 
@@ -1104,7 +1119,7 @@ label.container input:checked ~ .tipoCorte{
     width: auto;
     position: relative;
     float: left;
-    left: 38%;
+    left: 35%;
   }
 
   #carrito{
@@ -1299,13 +1314,13 @@ label.container input:checked ~ .tipoCorte{
     }
 
     .item-Title{
-      margin-left: -10%;
-      font-size: 1.1em;
+      margin-left: -5%;
+      font-size: 1.3m;
       font-weight: bold;
     }
   
     .item-Description{
-      margin-left: -10%;
+      margin-left: -2%;
     }
     
     .cantidad-precio{
@@ -1611,13 +1626,13 @@ label.container input:checked ~ .tipoCorte{
   }
 
   .item-Title{
-    margin-left: 10px;
+    margin-left: 35px;
     font-size: 1.1em;
     font-weight: bold;
   }
 
   .item-Description{
-    margin-left: 10px;
+    margin-left: 35px;
   }
   
   
@@ -2037,14 +2052,48 @@ label.container input:checked ~ .tipoCorte{
   }
 
   .item-Title{
-    font-size: 1.1em;
+    font-size: 1.0em;
     font-weight: bold;
     margin-left: 35px;
     padding-top: 10px;
+    width: 80%;
+    text-align: center;
+  }
+
+  #superMenu .item-Picture img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
   }
 
   .item-Description{
     visibility: hidden;
+  }
+
+  .precio{
+    width: 30px;
+    visibility: visible;
+  }
+  
+  .cantidad{
+    /* float: left; */
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 40px;
+    color: #000000;
+    text-align: center;
+    visibility: visible;
+  }
+  
+  .item-Price{
+    position: relative;
+    float: left;
+    text-align: right;
+    top: 4px;
+    left: -15%;
+    visibility: hidden;
+    /* font-size: 0.9em; */
   }
 
   .cantidad-precio{
