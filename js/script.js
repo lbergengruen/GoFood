@@ -77,7 +77,7 @@ if(document.querySelector(".subCalcBotton") !== null){
 }
 
 function chequearLista() {
-  var calculo = "";
+  var calculo = "Te recomendamos ";
   var hombreProp = 0.7;
   var mujerProp = 0.5;
   var niñoProp = 0.35;
@@ -96,6 +96,8 @@ function chequearLista() {
   var arrayAux = [];
   for(var i=0; i<=checkedValue.length; ++i){
     arrayAux[i] = proporciones[checkedValue[i]];
+    
+
   }
   insertHtml("#calculoRealizado", calculo);
   
