@@ -40,7 +40,7 @@ function contactar(){
     nombre = document.getElementById("insert_nombre").value;
     msj = document.getElementById("insert_msj").value;
     
-    if(nombre != "Nombre" && msj != "Su mensaje va aqui..."){
+    if(nombre != "Nombre" && msj != "Su mensaje va aqui..." && nombre != "" && msj != ""){
         mensaje = "<p style='color:green; font-weight: bold;'>Su mensaje ha sido enviado.<p>";
     }
 
@@ -51,4 +51,20 @@ function contactar(){
 
     insertHtml("#mensaje", mensaje);
     // window.recibo = recibo;
+};
+
+if(document.querySelector("#insert_nombre") !== null){
+    document.querySelector("#insert_nombre").addEventListener("click", vaciarNombre);
+}
+
+if(document.querySelector("#insert_msj") !== null){
+    document.querySelector("#insert_msj").addEventListener("click", vaciarMsj);
+}
+
+function vaciarNombre(){
+    document.getElementById("insert_nombre").value = "";
+};
+
+function vaciarMsj(){
+    document.getElementById("insert_msj").value = "";
 };
