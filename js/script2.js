@@ -9,12 +9,24 @@ if(document.querySelector(".enviar") !== null){
 
 function chequearYenviarMail(window){
     var mensaje = "";
-    r = document.getElementById("pedidoHecho").innerHTML;
-    console.log(r);
+    nombre = document.getElementById("nombreCompleto").value;
+    direccion = document.getElementById("direccion").value;
+    celular = document.getElementById("celular").value;
+    correo = document.getElementById("correo").value;    
+    comentarios = document.getElementById("comentarios").value;
+
+    if(recibo === "" || recibo ==="<br>GOMEAT<br><br>GOFISH<br><hr class='separador2'> TOTAL: $0"){
+        mensaje = "<p style='color:red; font-weight: bold;'>Por favor arme su Pedido.<p>";
+    }else if(nombre === "" || direccion === "" || celular === "" || correo === "") {
+        mensaje = "<p style='color:red; font-weight: bold;'>Por favor Ingrese todos los datos.<p>";
+    }else{
+        mensaje = "<p style='color:green; font-weight: bold;'>Su pedido ha sido enviado.<p>";
+    }
+
     // // console.log(document.querySelector(".cantidad").);
 
 
 
-    // insertHtml("#pedidoHecho", recibo);
+    insertHtml("#mensaje", mensaje);
     // window.recibo = recibo;
 };
