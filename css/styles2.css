@@ -271,7 +271,7 @@ a.submit:hover{
 }
 
 #mensaje{
-	height: 40px;
+	height: auto;
 	width: 100%;
 	margin: 20px auto 0 auto;
 	text-align: center;

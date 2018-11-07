@@ -40,6 +40,7 @@
 .navbar-brand a:link, .navbar-brand a:visited, .navbar-brand a:hover, .navbar-brand a:active{
   text-decoration:none;
   color: #DED890;
+  transition: 0.3s;
 }
 
 #header-nav>div.container{
@@ -105,6 +106,7 @@
   font-size: 1.1em;
   vertical-align: middle;
   line-height: 100%;
+  transition: 0.3s;
 }
 
 /********Carousel********/
@@ -146,6 +148,7 @@
 
 a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a.carousel-control:active{
   opacity: 0;
+  transition: 0.3s;
 }
 
 /**********Cartelera************/
@@ -208,7 +211,6 @@ a.carousel-control:link, a.carousel-control:visited, a.carousel-control:hover, a
   border: 10px solid #978D7A;
   margin: 0 5% 0 5%;
   background-color:rgba(256, 256, 220, 0.5);
-  height: 350px;
   text-align: center;
   width: 90%;
 }
@@ -226,24 +228,34 @@ a.botton:link, a.botton:visited, a.botton:hover, a.botton:active{
   text-decoration:none;
   color: #000000;
   vertical-align: middle;
-  line-height: 100%;
+  transition: 0.1s;
 }
+
+a.botton:hover{
+  font-size: 1.2em;
+  width: auto;
+}
+
 
 .botton_title {
   width: 250px;
+  height: 100%;
   text-align: center;
-  font-size: 3em;
-  padding-top: 13px;
   font-family: "cooper black", Arial, Helvetica;
   font-weight: bold;
   color: #000000;
   opacity: 1;
 }
 
+.botton_title>p {
+  font-size: 3em;
+  margin: 0;
+}
+
 .botton_image {
   width: 250px;
   height: 250px;
-  margin-bottom: 40px;
+
 }
 
 .botton_image img {
@@ -303,10 +315,12 @@ a.calcBotton:hover, a.calcBotton:visited, a.calcBotton:active, a.calcBotton:link
   border-radius: 30%;
   margin: 20px auto 0 auto;
   font-family: "candara", Arial, Helvetica;
+  transition: 0.3s;
 }
 
 a.calcBotton:hover{
   font-size: 24px;
+  transition: 0.3s;
 }
 
 /************Quienes somos**************/
@@ -335,6 +349,7 @@ a.calcBotton:hover{
 .quienesSomos_body>p{
   text-align: left;
   color: #eef;
+  line-height: 25px;
   font-size: 1.1em;
   font-weight: bold;
   font-family: "candara", Arial, Helvetica;
@@ -462,6 +477,7 @@ button.contBotton{
 
 button.contBotton:hover{
   font-size: 24px;
+  transition: 0.3s;
 }
 
 /************Footer**************/
@@ -490,11 +506,13 @@ button.contBotton:hover{
   text-decoration: none;
   border-radius: 100%;
   margin: 8px;
+  transition: 0.3s;
 }
 
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
+  text-decoration: none;
 }
 
 /* Set a specific color for each brand */
@@ -633,6 +651,7 @@ button.subCalcBotton{
 
 button.subCalcBotton:hover{
   font-size: 18px;
+  transition: 0.3s;
 }
 
 #calculoRealizado {
@@ -683,10 +702,12 @@ h4.calculadora {
   color: #23231E;
   float: right;
   padding: 8px 30px 8px 0;
+  transition: 0.3s;
 }
 
 .activeB:after {
   content: "\25B2";
+  transition: 0.3s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -757,6 +778,7 @@ label.container input {
 /* On mouse-over, add a grey background color */
 label.container:hover input ~ .tipoCorte {
   opacity: 1;
+  transition: 0.3s;
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -1512,16 +1534,26 @@ label.container input:checked ~ .tipoCorte{
   /************Pedir YA!!************/
 
   #bottons {
-    margin: 0;
+    height:100%;
     width: 100%;
-    height: auto;
-    background-color:rgba(256, 256, 220, 0);
-    border-color:rgba(256, 256, 220, 0);
+    text-decoration:none;
+    background-color: rgb(256, 256, 220, 0.6);
+    border: 5px solid #978D7A;
+    color: #000;
+    padding: 5px 3vw 5px 3vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    font-weight: bold;
+    border-radius: 30%;
+    margin: 15px auto 15px auto;
+    font-family: "candara";
   }
 
-  .botton {
-    width:90%;
-    height: 60%;
+  #pedirBoton {
+    width:80%;
+    margin:0 10% 0 10%;
   }
 
   .botton_image {
@@ -1530,30 +1562,12 @@ label.container input:checked ~ .tipoCorte{
     margin: 0;
   }
 
-  a#pedirBoton:link, a#pedirBoton:visited, a#pedirBoton:hover, a#pedirBoton:active{
-    height:100%;
-    width: 100%;
-    text-decoration:none;
-    background-color: rgb(256, 256, 220, 0.6);
-    border: 5px solid #978D7A;
-    color: #000;
-    padding: 10px 6vw 10px 6vw;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 5vw;
-    font-weight: bold;
-    border-radius: 30%;
-    margin: 20px auto 0 auto;
-    font-family: "candara";
-  }
   
   .botton_title {
     height:50%;
     width: 100%;
     text-align: center;
     font-size: 3em;
-    padding-top: 13px;
     font-family: "cooper black";
     color: #000000;
     opacity: 1;
@@ -1872,52 +1886,26 @@ label.container input:checked ~ .tipoCorte{
   /************Pedir YA!!************/
 
   #bottons {
-    margin: 0;
-    width: 100%;
-    height: auto;
-    background-color:rgba(256, 256, 220, 0);
-    border-color:rgba(256, 256, 220, 0);
-  }
-
-  .botton {
-    margin-top: 20px;
-    width:100%;
-    height: auto;
-  }
-
-  a#pedirBoton:link, a#pedirBoton:visited, a#pedirBoton:hover, a#pedirBoton:active{
     height:100%;
-    width: 100%;
+    width: 90%;
     text-decoration:none;
     background-color: rgb(256, 256, 220, 0.6);
     border: 5px solid #978D7A;
     color: #000;
-    padding: 10px 6vw 10px 6vw;
+    padding: 5px 3vw 5px 3vw;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 6.5vw;
+    font-size: 1vw;
     font-weight: bold;
     border-radius: 30%;
-    margin: 0;
+    margin: 15px 5% 15px 5%;
     font-family: "candara";
   }
 
-  .botton_title {
-    height:100%;
-    width: 100%;
-    text-align: center;
-    vertical-align: center;
-    padding: 0;
-    font-family: "cooper black";
-    font-size: 10vw;
-    color: #000000;
-    opacity: 1;
-  }
-
-  .botton>a.botton{
-    width: 0;
-    height: 0;
+  #pedirBoton {
+    width:80%;
+    margin:0 10% 0 10%;
   }
 
   .botton_image {
@@ -1926,7 +1914,18 @@ label.container input:checked ~ .tipoCorte{
     margin: 0;
   }
 
-  .botton>p{
+  
+  .botton_title {
+    height:50%;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    font-family: "cooper black";
+    color: #000000;
+    opacity: 1;
+  }
+
+  a#pedirBoton>p {
     margin: 0;
   }
 

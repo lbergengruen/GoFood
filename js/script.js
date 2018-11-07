@@ -66,8 +66,8 @@ function ingresarRecibo(window){
 
 
 var inputElements = document.getElementsByClassName('messageCheckbox');
-var opcionesCarne = ["kg de Carne con Hueso", "kg de Carne sin hueso", "kg de Chorizo/s", "kg de Morcilla/s", "kg de Riñon/es", 
-                    "kg de Chinchulin/es", "kg de Choto/s", "kg de Salchicha/s", "kg de Pamplona/s", "kg de Matambrito/s"];
+var opcionesCarne = ["kg de Carne con Hueso", "kg de Carne sin hueso", "kg de Chorizo", "kg de Morcilla", "kg de Riñon", 
+                    "kg de Chinchulin", "kg de Choto", "kg de Salchicha", "kg de Pamplona", "kg de Matambrito"];
 var proporciones = [5,6,0.7,0.5,0.3,0.2,0.3,0.5,0.6,0.6];
 var peso = [1, 1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.5, 0.3, 0.3]
 
