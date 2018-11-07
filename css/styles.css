@@ -1706,11 +1706,8 @@ label.container input:checked ~ .tipoCorte{
   font-size: 3.6vw;
 }
 
-.collapsibleB, .collapsibleC {
-  font-size: 3.2vw;
-}
 
-.collapsibleA:after, .collapsibleB:after, .collapsibleC:after {
+.collapsibleA:after{
   font-size: 15px;
   padding: 5px 12px 5px 0;
 }

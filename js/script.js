@@ -78,22 +78,24 @@ if(document.querySelector(".subCalcBotton") !== null){
 
 function chequearLista() {
   var calculo = "";
-  var hombre = 0.7;
-  var mujer = 0.5;
-  var niño = 0.35;
+  var hombreProp = 0.7;
+  var mujerProp = 0.5;
+  var niñoProp = 0.35;
   var puntosTotal = 0;
-  
+  var hombres = parseInt(document.getElementById("hombres").value);
+  var mujeres = parseInt(document.getElementById("mujeres").value);
+  var niños = parseInt(document.getElementById("niños").value);
+
   for(var i=0; inputElements[i]; ++i){
     if(inputElements[i].checked){
-        checkedValue[j] = (inputElements[i]).value;
+        checkedValue[j] = i;
         puntosTotal = puntosTotal + proporciones[i];
         ++j;
     }
   }
+  var arrayAux = [];
   for(var i=0; i<=checkedValue.length; ++i){
-    if(checkedValue){
-
-    }
+    arrayAux[i] = proporciones[checkedValue[i]];
   }
   insertHtml("#calculoRealizado", calculo);
   
