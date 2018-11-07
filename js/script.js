@@ -64,62 +64,18 @@ function ingresarRecibo(window){
   window.recibo = recibo;
 };
 
+var checkedValue = []; 
+var inputElements = document.getElementsByClassName('messageCheckbox');
+var j=0;
 
-
-recibo = "";
-
-var lista = ["Colita Cuadril", "Peceto", "Bife al Vacío", "Bife ancho", "Nalga feteada y tiernizada", "Arañita",
-  "Entraña fina", "Bola de lomo", "Asado Premium", "Asado Angus", "Asado Feedlot", "Chorizo Parrillero",
-  "Chorizo Doña Coca", "Chorizo con Morrón y Queso", "Salchicha Parrillera", "Salchicha con Queso",
-  "Morcilla Dulce", "Morcilla Salada", "Chinchulin", "Riñon", "Choto Parrillero", "Asado de Cerdo (Español)",
-  "Matambrito", "Bondiola", "Pamplona", "Chuleta de Cerdo", "Panceta Ahumada", "Lechon", "Milanesa de Carne",
-  "Milanesa de Pollo", "Milanesa de Jamon y Queso", "Pamplona de Pollo", "Arrollado de Pollo", "Brochettes de Pollo",
-  "Supremas Congeladas", "Filet Merluza", "Filet Pescadilla Calada", "Filet Pescadilla de Red", "Salmon", "Filet Palometa", "Filet Anchoas",
-  "Filet Brótola", "Filet Lenguado", "Filet Corvina Fresca","Filet Cazón", "Filet Panga", 
-  "Filet Corvina Congelado", "Filet Abadejo", "Pez Espada", "Medallones Merluza", "Milanesa de Merluza",
-  "Chiripirones Limpios", "Pulpitos", "Pulpa Camarón", "Pulpa de Mejillones", "Mix Mariscos", "Pulpa Langostinos",
-  "Pulpa Berberechos", "Langostinos Enteros"];
-var precios = [289, 269, 319, 299, 339, 279, 269, 279, 259, 199, 369, 229, 239, 269, 299, 329, 199, 199, 169, 139, 239, 299,
-    209, 179, 369, 289, 299, 269, 289, 259, 249, 339, 349, 459, 249, 269, 269, 279, 719, 269, 279, 449, 449, 319, 265, 209, 319,
-    449, 579, 259, 289, 339, 379, 579, 289, 279, 579, 329, 679];
-
-
-function insertHtml(selector, html) {
-  var targetElem = document.querySelector(selector);
-  targetElem.innerHTML = html;
-};
-
-if(document.querySelector(".submit") !== null){
-  document.querySelector(".submit").addEventListener("click", ingresarRecibo);
+for(var i=0; inputElements[i]; ++i){
+      if(inputElements[i].checked){
+           checkedValue[j] = (inputElements[i]).value;
+           ++j;
+           console.log(ckeckedValue);
+           break;
+      }
 }
-
-function ingresarRecibo(window){
-  var recibo = "";
-  precioTotal = 0;
-  // console.log(document.getElementById("i1").value);
-  // console.log(document.querySelector(".cantidad").);
-  
-  for (i=1; i<=lista.length; i++) { 
-    // console.log(i);
-    c = parseInt(document.getElementById("i"+ i).value);
-    // console.log(c);
-    if(i==1){
-      recibo=recibo+"<br>GOMEAT<br>"
-    }
-    if(i==36){
-      recibo=recibo+"<br>GOFISH<br>"
-    }
-    if(c!==0){
-      precio = precios[i-1]*c;
-      precioTotal = precioTotal+precio;
-      recibo = recibo+lista[i-1]+"("+c+" Unidad/es): $"+precio+"<br>";
-    }
-
-  } 
-  recibo = recibo + "<hr class='separador2'> TOTAL: $"+precioTotal;
-  insertHtml("#pedidoHecho", recibo);
-  window.recibo = recibo;
-};
 
 
 // (function (global) {
@@ -287,7 +243,7 @@ for (j = 0; j < coll.length; j++) {
     }
   });
 }
-/*
+
 var coll = document.getElementsByClassName("collapsibleA");
 var i;
 
@@ -302,64 +258,4 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-*/
-var coll = document.getElementsByClassName("collapsibleB");
-j = 0;
 
-for (j = 0; j < coll.length; j++) {
-  coll[j].addEventListener("click", function() {
-    this.classList.toggle("activeB");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-/*
-var coll = document.getElementsByClassName("collapsibleB");
-i = 0;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("activeB");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-*/
-var coll = document.getElementsByClassName("collapsibleC");
-j = 0;
-
-for (j = 0; j < coll.length; j++) {
-  coll[j].addEventListener("click", function() {
-    this.classList.toggle("activeB");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-/*
-var coll = document.getElementsByClassName("collapsibleC");
-i = 0;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("activeB");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-*/

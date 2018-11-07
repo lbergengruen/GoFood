@@ -637,10 +637,10 @@ button.subCalcBotton:hover{
   color: #181816;
   text-align: left;
   text-decoration: none;
-  display: inline-block;
   font-size: 24px;
   font-weight: bold;
   font-family: "candara";
+  padding: 10px;
 }
 
 h4.calculadora {
@@ -652,7 +652,7 @@ h4.calculadora {
   color: #23231E;
 }
 
-.collapsibleA, .collapsibleB, .collapsibleC {
+.collapsibleA {
   background-color: rgba(39, 39, 36, 0);
   font-family: "arial";
   font-size: 2em;
@@ -666,11 +666,7 @@ h4.calculadora {
   outline: none;
 }
 
-.collapsibleB, .collapsibleC {
-  font-size: 1.7em;
-}
-
-.collapsibleA:after, .collapsibleB:after, .collapsibleC:after {
+.collapsibleA:after{
   content: '\25BC';
   font-size: 20px;
   color: #23231E;
@@ -683,7 +679,7 @@ h4.calculadora {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.activeB, .collapsibleA:hover, .collapsibleB:hover, .collapsibleC:hover  {
+.activeB, .collapsibleA:hover {
   transition: 0.3s;
   background-color:rgba(230, 225, 225, 0.75);
 }
@@ -693,31 +689,11 @@ h4.calculadora {
   padding: 0;
   display: none;
   overflow: hidden;
-  /*
   max-height: 0;
   transition: max-height 0.4s ease-out;
-  */
+
 }
 
-.contentB {
-  padding: 0;
-  display: none;
-  overflow: hidden;
-  /*
-  max-height: 0;
-  transition: max-height 0.4s ease-out;
-  */
-}
-
-.contentC {
-  padding: 0;
-  display: none;
-  overflow: hidden;
-  /*
-  max-height: 0;
-  transition: max-height 0.4s ease-out;
-  */
-}
 
 .tipoCarne {
   padding: 20px;
@@ -759,7 +735,7 @@ label.container input {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 13px;
+  font-size: 15px;
   border-radius: 20%;
   margin: 6px;
   font-family: "candara";
