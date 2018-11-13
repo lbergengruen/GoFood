@@ -276,7 +276,7 @@ function carousel() {
     if (slideIndex > x.length) {slideIndex = 1} 
     x[slideIndex-1].style.display = "block"; 
     y[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 4000); // Change image every 2 seconds
+    setTimeout(carousel, 4000);
 }
 
 var coll = document.getElementsByClassName("collapsibleA");
