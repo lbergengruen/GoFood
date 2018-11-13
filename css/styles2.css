@@ -234,6 +234,7 @@ a.submit:hover, a.submit:visited, a.submit:active, a.submit:link{
 
 a.submit:hover{
 	font-size: 18px;
+	transition: 0.7s;
 }
 
 #campos-datos{
@@ -302,4 +303,5 @@ a.enviar:hover, a.enviar:visited, a.enviar:active, a.enviar:link{
 
 a.enviar:hover{
 	font-size: 22px;
+	transition: 0.7s;
 }
