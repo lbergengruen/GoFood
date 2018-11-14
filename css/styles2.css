@@ -176,9 +176,14 @@ h2#indice{
 	margin: 0px 5% 0px 5%;
 	background-color:rgba(230, 225, 225, 0.75);
 	min-height: 800px;
+	width: 90%;
 	height: auto;
 	border-top: solid 5px #ffffff;
 	font-family: "arial", Helvetica ;
+}
+
+#carrito>div{
+	width: 100%;
 }
 
 #carrito h1{
@@ -251,7 +256,8 @@ a.submit:hover{
 }
 
 #direccion{
-	width: 350px;
+	max-width: 350px;
+	width: 100%;
 }
 
 #celular{
@@ -263,7 +269,8 @@ a.submit:hover{
 }
 
 #comentarios{
-	width: 350px;
+	max-width: 350px;
+	width: 100%;
 	height: 100px;
 }
 
