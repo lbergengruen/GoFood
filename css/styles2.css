@@ -272,7 +272,7 @@ a.submit:hover{
 }
 
 #mensaje{
-	height: auto;
+	height: 30px;
 	width: 100%;
 	margin: 20px auto 0 auto;
 	text-align: center;

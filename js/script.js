@@ -37,31 +37,32 @@ if(document.querySelector(".submit") !== null){
 };
 
 function ingresarRecibo(window){
-  
-  precioTotal = 0;
-  // console.log(document.getElementById("i1").value);
-  // console.log(document.querySelector(".cantidad").);
-  
-  for (i=1; i<=lista.length; i++) { 
-    // console.log(i);
-    c = parseInt(document.getElementById("i"+ i).value);
-    // console.log(c);
-    if(i==1){
-      recibo=recibo+"<br>GOMEAT<br>"
-    }
-    if(i==36){
-      recibo=recibo+"<br>GOFISH<br>"
-    }
-    if(c!==0){
-      precio = precios[i-1]*c;
-      precioTotal = precioTotal+precio;
-      recibo = recibo+lista[i-1]+"("+c+" Unidad/es): $"+precio+"<br>";
-    }
+    recibo = "";
+    precioTotal = 0;
+    // console.log(document.getElementById("i1").value);
+    // console.log(document.querySelector(".cantidad").);
+    
+    for (i=1; i<=lista.length; i++) { 
+      // console.log(i);
+      c = parseInt(document.getElementById("i"+ i).value);
+      // console.log(c);
+      if(i==1){
+        recibo=recibo+"<br>GOMEAT<br>"
+      }
+      if(i==36){
+        recibo=recibo+"<br>GOFISH<br>"
+      }
+      if(c!==0){
+        precio = precios[i-1]*c;
+        precioTotal = precioTotal+precio;
+        recibo = recibo+lista[i-1]+"("+c+" Unidad/es): $"+precio+"<br>";
+      }
 
-  } 
-  recibo = recibo + "<hr class='separador2'> TOTAL: $"+precioTotal;
-  insertHtml("#pedidoHecho", recibo);
-  window.recibo = recibo;
+    } 
+    recibo = recibo + "<hr class='separador2'> TOTAL: $"+precioTotal;
+    insertHtml("#pedidoHecho", recibo);
+    window.recibo = recibo;
+  
 };
 
 
